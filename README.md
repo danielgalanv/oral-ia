@@ -1,4 +1,4 @@
-> **Copia pública del proyecto ORAL-IA.** Contiene el código, las pruebas, las especificaciones y los informes de ensayo en Markdown. No incluye el material docente ni los textos de documentos de terceros usados en el piloto, ni datos personales; consulta `materiales/README.md`. Sin ese material el asistente no tiene qué consultar y algunas pruebas que lo necesitan no pasarán. No hay todavía licencia de uso asignada: todos los derechos reservados hasta que se indique otra cosa.
+> **Copia pública del proyecto ORAL-IA.** Contiene el código, las pruebas, las especificaciones y los informes de ensayo en Markdown. No incluye el material docente ni los textos de documentos de terceros usados en el piloto, ni datos personales; consulta `materiales/README.md`. Sin ese material el asistente no tiene qué consultar y algunas pruebas que lo necesitan no pasarán. El código y la documentación propios se publican con licencia Apache-2.0 (ver `LICENSE` y `NOTICE`); no cubre el material docente ni los textos de terceros.
 
 # ORALIA
 
