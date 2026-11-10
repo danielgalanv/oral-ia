@@ -1,0 +1,134 @@
+{
+  "development": [
+    {
+      "text": "Hola. Estoy estudiando Ingeniería del Software y no entiendo qué significa validar los requisitos.",
+      "contains": [
+        "necesidades",
+        "aprobación"
+      ],
+      "original_pages": [
+        12
+      ]
+    },
+    {
+      "text": "¿Qué diferencia hay entre verificar la calidad de los requisitos y validarlos?",
+      "contains": [
+        "modelo de calidad",
+        "necesidades"
+      ],
+      "original_pages": [
+        10,
+        12
+      ]
+    },
+    {
+      "text": "¿Qué riesgos hay si no validamos los requisitos?",
+      "contains": [
+        "inadecuado",
+        "usabilidad"
+      ],
+      "original_pages": [
+        12
+      ]
+    },
+    {
+      "text": "¿Qué tareas sirven para validar los requisitos con el cliente?",
+      "contains": [
+        "Reuniones",
+        "prototipado"
+      ],
+      "original_pages": [
+        12
+      ]
+    },
+    {
+      "text": "¿Qué significa que un requisito sea comprobable?",
+      "contains": [
+        "pruebas",
+        "razonables"
+      ],
+      "original_pages": [
+        11
+      ]
+    },
+    {
+      "text": "¿Qué significa no ambiguo?",
+      "contains": [
+        "una sola manera"
+      ],
+      "original_pages": [
+        11
+      ]
+    },
+    {
+      "text": "¿Puedes inventar un ejemplo completo de mi proyecto?",
+      "limit": true
+    }
+  ],
+  "reserved": [
+    {
+      "text": "¿Para qué se validan los requisitos del sistema?",
+      "contains": [
+        "necesidades",
+        "aprobación"
+      ],
+      "original_pages": [
+        12
+      ]
+    },
+    {
+      "text": "¿En qué se diferencia comprobar la calidad del SRS de validar requisitos?",
+      "contains": [
+        "modelo de calidad",
+        "necesidades"
+      ],
+      "original_pages": [
+        10,
+        12
+      ]
+    },
+    {
+      "text": "¿Qué puede salir mal si no se validan los requisitos?",
+      "contains": [
+        "inadecuado",
+        "usabilidad"
+      ],
+      "original_pages": [
+        12
+      ]
+    },
+    {
+      "text": "¿Qué tareas sirven para contrastarlos con clientes y usuarios?",
+      "contains": [
+        "Reuniones",
+        "prototipado"
+      ],
+      "original_pages": [
+        12
+      ]
+    },
+    {
+      "text": "¿Cómo define la diapositiva que un requisito sea comprobable?",
+      "contains": [
+        "pruebas",
+        "razonables"
+      ],
+      "original_pages": [
+        11
+      ]
+    },
+    {
+      "text": "Aclárame qué quiere decir no ambiguo.",
+      "contains": [
+        "una sola manera"
+      ],
+      "original_pages": [
+        11
+      ]
+    },
+    {
+      "text": "¿Puedes generar un ejemplo nuevo para mi proyecto?",
+      "limit": true
+    }
+  ]
+}

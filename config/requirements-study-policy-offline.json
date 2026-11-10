@@ -1,0 +1,120 @@
+{
+  "policy": {
+    "activity": "requirements-teacher-diagnostic-v2",
+    "version": 5,
+    "enabled": false,
+    "mode": "self_study",
+    "concepts": [
+      "software requirements",
+      "requirements definition",
+      "requirements validation",
+      "requirements traceability",
+      "requirements elicitation",
+      "nonfunctional requirements"
+    ],
+    "destinations": [
+      "www.nasa.gov",
+      "archive.cs.st-andrews.ac.uk",
+      "www.rfc-editor.org",
+      "software-engineering-book.com"
+    ],
+    "max_searches": 2,
+    "max_pages": 3,
+    "max_bytes": 1048576,
+    "seconds": 60,
+    "request_seconds": 15,
+    "retries": 0,
+    "redirects": 2
+  },
+  "sources": {
+    "software requirements": [
+      {
+        "url": "https://software-engineering-book.com/web/requirements-standard/",
+        "title": "The IEEE standard for requirements documents",
+        "entity": "Ian Sommerville / Software Engineering 10th edition companion",
+        "edition": "Public 10th-edition web supplement; describes historical IEEE/ANSI 830-1998, not a claim of the latest standard",
+        "conditions": "Public original documentation, educational laboratory only; no access bypass. Retrieval does not imply academic approval."
+      },
+      {
+        "url": "https://www.nasa.gov/reference/4-2-technical-requirements-definition/",
+        "title": "4.2 Technical Requirements Definition",
+        "entity": "NASA",
+        "edition": "NASA Systems Engineering Handbook, public HTML; captured version recorded at acquisition",
+        "conditions": "Public original documentation, educational laboratory only; no access bypass. Retrieval does not imply academic approval."
+      }
+    ],
+    "requirements definition": [
+      {
+        "url": "https://www.nasa.gov/reference/4-2-technical-requirements-definition/",
+        "title": "4.2 Technical Requirements Definition",
+        "entity": "NASA",
+        "edition": "NASA Systems Engineering Handbook, public HTML; captured version recorded at acquisition",
+        "conditions": "Public original documentation, educational laboratory only; no access bypass. Retrieval does not imply academic approval."
+      },
+      {
+        "url": "https://software-engineering-book.com/web/requirements-standard/",
+        "title": "The IEEE standard for requirements documents",
+        "entity": "Ian Sommerville / Software Engineering 10th edition companion",
+        "edition": "Public 10th-edition web supplement; describes historical IEEE/ANSI 830-1998, not a claim of the latest standard",
+        "conditions": "Public original documentation, educational laboratory only; no access bypass. Retrieval does not imply academic approval."
+      }
+    ],
+    "requirements validation": [
+      {
+        "url": "https://www.nasa.gov/reference/4-2-technical-requirements-definition/",
+        "title": "4.2 Technical Requirements Definition",
+        "entity": "NASA",
+        "edition": "NASA Systems Engineering Handbook, public HTML; captured version recorded at acquisition",
+        "conditions": "Public original documentation, educational laboratory only; no access bypass. Retrieval does not imply academic approval."
+      }
+    ],
+    "requirements traceability": [
+      {
+        "url": "https://www.nasa.gov/reference/6-2-requirements-management/",
+        "title": "6.2 Requirements Management",
+        "entity": "NASA",
+        "edition": "NASA Systems Engineering Handbook, public HTML; requirements management and bidirectional traceability",
+        "conditions": "Public original documentation, educational laboratory only; no access bypass. Retrieval does not imply academic approval."
+      }
+    ],
+    "requirements elicitation": [
+      {
+        "url": "https://archive.cs.st-andrews.ac.uk/STSE-Handbook/RequirementsandDesign/",
+        "title": "Requirements and Design",
+        "entity": "Ian Sommerville / University of St Andrews",
+        "edition": "2011, LSCITS Socio-Technical Systems Engineering Handbook",
+        "conditions": "Public original documentation, educational laboratory only; no access bypass. Retrieval does not imply academic approval."
+      }
+    ],
+    "nonfunctional requirements": [
+      {
+        "url": "https://software-engineering-book.com/web/requirements-standard/",
+        "title": "The IEEE standard for requirements documents",
+        "entity": "Ian Sommerville / Software Engineering 10th edition companion",
+        "edition": "Public 10th-edition web supplement; describes historical IEEE/ANSI 830-1998, not a claim of the latest standard",
+        "conditions": "Public original documentation, educational laboratory only; no access bypass. Retrieval does not imply academic approval."
+      },
+      {
+        "url": "https://www.nasa.gov/reference/4-2-technical-requirements-definition/",
+        "title": "4.2 Technical Requirements Definition",
+        "entity": "NASA",
+        "edition": "NASA Systems Engineering Handbook, public HTML; captured version recorded at acquisition",
+        "conditions": "Public original documentation, educational laboratory only; no access bypass. Retrieval does not imply academic approval."
+      }
+    ]
+  },
+  "activity_scope": {
+    "activity": "requirements-teacher-diagnostic-v2",
+    "version": 4,
+    "concepts": [
+      "software requirements",
+      "requirements definition",
+      "requirements validation",
+      "requirements traceability",
+      "requirements elicitation",
+      "nonfunctional requirements"
+    ],
+    "exclusive": true,
+    "basis": "User-defined pilot activity: self-study of software engineering requirements. These six broad topic categories delimit this activity, not the entire Software Engineering course. Separate from documentary sufficiency."
+  }
+}

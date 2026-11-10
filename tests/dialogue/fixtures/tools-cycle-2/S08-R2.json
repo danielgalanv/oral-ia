@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "case_id": "S08-R2",
+  "family": "S08",
+  "partition": "holdout_cycle_2",
+  "seed": 9208,
+  "domain": "agua",
+  "mode": "oral_defense",
+  "effective_profile": "guided_controlled",
+  "material_versions": "fixture_published_v1",
+  "roles": [
+    "participant",
+    "teacher"
+  ],
+  "consent_scope": [
+    "transcript",
+    "summary"
+  ],
+  "initial_state": "isolated_empty_database",
+  "fault": null,
+  "fault_injected": false,
+  "steps": [
+    {
+      "actor": "participant",
+      "input": "¿Cómo ocurre la ebullición?",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Quiero un ejemplo",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Necesito una comparación",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Consulto el recibo antes de intentar otra petición",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Reutilizo el identificador con otros argumentos",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Compruebo el turno confirmado",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Quiero terminar",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    }
+  ],
+  "expected_properties": {
+    "operations": [
+      "request_receipt",
+      "reconcile"
+    ],
+    "forbidden_operations": [
+      "duplicate_turn"
+    ],
+    "role_scope": "participant owns session; teacher-only API requires authenticated teacher",
+    "arguments": "resolved fixture identifiers, exact version and current scope",
+    "state": "no duplicate turn, foreign mutation, retention without consent or resurrection",
+    "response": "agrees with persisted effect; no fabricated success"
+  },
+  "public_verification": {
+    "teacher_actions_do_not_count_as_participant_turns": true,
+    "operation_observation": "traces plus public API and database effects; no favorable replacement"
+  }
+}

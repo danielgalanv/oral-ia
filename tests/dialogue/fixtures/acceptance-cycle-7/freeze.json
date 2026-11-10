@@ -1,0 +1,12 @@
+{
+  "created_at_utc": "2026-10-19T15:16:20.641876+00:00",
+  "sha256": {
+    "inputs.json": "31390e3975b1c8455143c1e263063217849a49ff4d5cf2d15c9eb581a86ee6bf"
+  },
+  "fresh_classification_inputs": 48,
+  "critical_inputs": 36,
+  "fresh_dialogues": 0,
+  "dialogue_basis": "12 W first-reserve conversations from cycle5; do not relabel their current replay as new reserve. Verify unchanged interpreter behavior over all W inputs and separate public replay.",
+  "review": "AI implementer engineering annotation, not human review. Frozen before first execution; retain every failure and do not tune on this batch.",
+  "prior_input_passes_reused": false
+}

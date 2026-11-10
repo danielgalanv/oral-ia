@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revisión de avisos</title>
+<style>
+  :root { --fondo:#f6f7f9; --tarjeta:#fff; --texto:#1c2330; --suave:#5b6577; --borde:#d9dde5; --acento:#1f5fbf;
+          --ok:#1d7a46; --mal:#b3261e; --duda:#8a6100; }
+  @media (prefers-color-scheme: dark) { :root { --fondo:#14181f; --tarjeta:#1d232d; --texto:#e8ecf3; --suave:#9aa5b8;
+          --borde:#333c4a; --acento:#6ea2f0; --ok:#5cc58a; --mal:#f0827a; --duda:#e0b04a; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--fondo); color:var(--texto); font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  main { max-width: 860px; margin: 0 auto; padding: 24px 16px 64px; }
+  h1 { font-size: 1.4rem; margin: 0 0 4px; }
+  .sub { color: var(--suave); margin: 0 0 16px; font-size: .95rem; }
+  .resumen { background:var(--tarjeta); border:1px solid var(--borde); border-radius:10px; padding:12px 16px; margin-bottom:16px; }
+  .resumen b { font-variant-numeric: tabular-nums; }
+  .tabs { display:flex; gap:8px; margin-bottom:16px; flex-wrap:wrap; }
+  .tabs button { border:1px solid var(--borde); background:var(--tarjeta); color:var(--texto); padding:8px 14px; border-radius:999px; cursor:pointer; font:inherit; }
+  .tabs button[aria-pressed="true"] { background:var(--acento); border-color:var(--acento); color:#fff; }
+  article { background:var(--tarjeta); border:1px solid var(--borde); border-radius:12px; padding:16px; margin-bottom:16px; }
+  .meta { color:var(--suave); font-size:.85rem; margin-bottom:8px; }
+  .tag { display:inline-block; border:1px solid var(--borde); border-radius:6px; padding:0 8px; margin-right:6px; font-size:.8rem; }
+  h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; color: var(--suave); margin: 14px 0 4px; }
+  .pregunta { font-weight: 600; margin: 0; }
+  .respuesta { white-space: pre-wrap; background: var(--fondo); border-radius: 8px; padding: 10px 12px; margin: 0; max-height: 260px; overflow:auto; }
+  .hallazgo { border-left: 3px solid var(--mal); padding: 2px 0 2px 10px; margin: 6px 0; }
+  .hallazgo small { color: var(--suave); display:block; }
+  .acciones { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+  .acciones button { border:1px solid var(--borde); background:var(--tarjeta); color:var(--texto); padding:8px 14px; border-radius:8px; cursor:pointer; font:inherit; }
+  .acciones button[data-v="acierto"]:hover, .acciones button[aria-pressed="true"][data-v="acierto"] { border-color:var(--ok); color:var(--ok); }
+  .acciones button[data-v="falsa_alarma"]:hover, .acciones button[aria-pressed="true"][data-v="falsa_alarma"] { border-color:var(--mal); color:var(--mal); }
+  .acciones button[data-v="dudoso"]:hover, .acciones button[aria-pressed="true"][data-v="dudoso"] { border-color:var(--duda); color:var(--duda); }
+  .acciones button[aria-pressed="true"] { font-weight:700; }
+  textarea { width:100%; margin-top:10px; border:1px solid var(--borde); border-radius:8px; padding:8px; background:var(--fondo); color:var(--texto); font:inherit; min-height:48px; }
+  .estado { color:var(--suave); font-size:.85rem; margin-top:6px; min-height:1.2em; }
+  .vacio { color:var(--suave); text-align:center; padding:32px 0; }
+  button:focus-visible, textarea:focus-visible { outline: 2px solid var(--acento); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Revisión de avisos</h1>
+  <p class="sub">Aquí están los avisos de posible error que vio el alumno y los rechazos o aclaraciones del chat en lugar de una respuesta. Marca si estaban justificados.</p>
+  <div class="resumen" id="resumen" aria-live="polite"></div>
+  <div class="tabs" role="group" aria-label="Filtro">
+    <button data-f="pendientes" aria-pressed="true">Pendientes</button>
+    <button data-f="evaluados" aria-pressed="false">Evaluados</button>
+    <button data-f="todos" aria-pressed="false">Todos</button>
+  </div>
+  <div id="lista"></div>
+</main>
+<script>
+const NOMBRES = { acierto: "Acierto", falsa_alarma: "Falsa alarma", dudoso: "Dudoso" };
+const TIPOS = { contradiction: "Contradice el material", wrong_concept: "Concepto confundido", attribution: "Atribución sin respaldo", not_reviewed: "No se pudo revisar",
+  scope_outside: "Rechazo: tema ajeno", scope_uncertain: "Pide aclaración: no lo relaciona con el tema", material_not_covered: "Rechazo: el material no lo trata", needs_referent: "Pide aclaración: falta el referente" };
+const NOMBRES_RECHAZO = { acierto: "Bien rechazada", falsa_alarma: "Debía responderse", dudoso: "Dudoso" };
+let datos = { avisos: [], resumen: {} };
+let filtro = "pendientes";
+
+function el(tag, props = {}, ...hijos) {
+  const e = document.createElement(tag);
+  Object.assign(e, props);
+  for (const h of hijos) e.append(h);
+  return e;
+}
+
+function pintarResumen() {
+  const r = datos.resumen, c = r.por_veredicto || {};
+  const caja = document.getElementById("resumen");
+  caja.replaceChildren();
+  caja.append(`Avisos: `, el("b", { textContent: r.total ?? 0 }), ` · evaluados: `, el("b", { textContent: r.evaluados ?? 0 }),
+    ` · acierto: `, el("b", { textContent: c.acierto ?? 0 }), ` · falsa alarma: `, el("b", { textContent: c.falsa_alarma ?? 0 }),
+    ` · dudoso: `, el("b", { textContent: c.dudoso ?? 0 }));
+}
+
+function tarjeta(a) {
+  const art = el("article");
+  const meta = el("div", { className: "meta" }, new Date(a.at).toLocaleString("es-ES") + " · ");
+  for (const k of a.notice_kinds) meta.append(el("span", { className: "tag", textContent: TIPOS[k] || k }));
+  art.append(meta);
+  art.append(el("h2", { textContent: "Pregunta del alumno" }), el("p", { className: "pregunta", textContent: a.question }));
+  const rechazo = a.kind === "rechazo";
+  if (rechazo && a.previous_question) art.append(el("h2", { textContent: "Pregunta anterior de la conversación" }), el("p", { className: "meta", textContent: a.previous_question }));
+  art.append(el("h2", { textContent: rechazo ? "Lo que contestó el chat (no generó respuesta)" : "Respuesta del chat" }), el("p", { className: "respuesta", textContent: a.answer }));
+  if (a.reviewer_findings.length) {
+    art.append(el("h2", { textContent: "Qué señaló el revisor automático" }));
+    for (const f of a.reviewer_findings) {
+      const h = el("div", { className: "hallazgo" }, f.reason);
+      if (f.unit_text) h.append(el("small", { textContent: "Fragmento: " + f.unit_text.slice(0, 300) }));
+      art.append(h);
+    }
+  }
+  art.append(el("h2", { textContent: "Fuentes recuperadas" }), el("div", { className: "meta", textContent: a.sources.join(", ") || "—" }));
+  const nota = el("textarea", { placeholder: "Nota opcional", value: a.mark ? a.mark.nota : "", ariaLabel: "Nota" });
+  const estado = el("div", { className: "estado", textContent: a.mark ? "Guardado: " + NOMBRES[a.mark.veredicto] : "" });
+  const acciones = el("div", { className: "acciones" });
+  for (const v of Object.keys(NOMBRES)) {
+    const b = el("button", { type: "button", textContent: (rechazo ? NOMBRES_RECHAZO : NOMBRES)[v] });
+    b.dataset.v = v;
+    b.setAttribute("aria-pressed", String(!!a.mark && a.mark.veredicto === v));
+    b.onclick = async () => {
+      estado.textContent = "Guardando…";
+      try {
+        const r = await fetch(`/api/avisos/${encodeURIComponent(a.id)}/marca`, {
+          method: "POST", headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ veredicto: v, nota: nota.value }),
+        });
+        if (!r.ok) throw new Error(r.status);
+        await cargar();
+      } catch (e) { estado.textContent = "No se pudo guardar (" + e.message + ")"; }
+    };
+    acciones.append(b);
+  }
+  art.append(nota, acciones, estado);
+  return art;
+}
+
+function pintar() {
+  pintarResumen();
+  const lista = document.getElementById("lista");
+  lista.replaceChildren();
+  const filas = datos.avisos.filter(a => filtro === "todos" || (filtro === "pendientes") === !a.mark);
+  if (!filas.length) lista.append(el("div", { className: "vacio", textContent: filtro === "pendientes" ? "No hay avisos pendientes." : "No hay avisos." }));
+  for (const a of filas) lista.append(tarjeta(a));
+}
+
+async function cargar() {
+  const r = await fetch("/api/avisos");
+  datos = await r.json();
+  pintar();
+}
+
+document.querySelectorAll(".tabs button").forEach(b => b.onclick = () => {
+  filtro = b.dataset.f;
+  document.querySelectorAll(".tabs button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+  pintar();
+});
+cargar();
+</script>
+</body>
+</html>

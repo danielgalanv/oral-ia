@@ -1,0 +1,1612 @@
+{
+  "schema": "obsolete-test-artifacts-prune/v1",
+  "targets": [
+    {
+      "path": ".claude-scratch\\autostudy-approved-20261101",
+      "bytes": 16255,
+      "files": 21,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\autostudy-didactic-binding-20261101",
+      "bytes": 356688,
+      "files": 93,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\autostudy-final-config-module-20261101",
+      "bytes": 12519984,
+      "files": 573,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\autostudy-question-approval-20261101",
+      "bytes": 16255,
+      "files": 21,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\autostudy-question-final-20261101",
+      "bytes": 16255,
+      "files": 21,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\autostudy-unattended-flow-20261101",
+      "bytes": 355571,
+      "files": 93,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\black-concept-ledger",
+      "bytes": 1119,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\black-maintenance",
+      "bytes": 20520,
+      "files": 3,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\black-prepared-concepts",
+      "bytes": 944,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\chat-connected-20261102",
+      "bytes": 152,
+      "files": 4,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\chat-final-rrf-20261102",
+      "bytes": 518,
+      "files": 10,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\chat-first-20261102",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\chat-focal-checked-20261102",
+      "bytes": 518,
+      "files": 10,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\chat-focal-final-20261102",
+      "bytes": 152,
+      "files": 4,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\chat-regression-20261102",
+      "bytes": 12528671,
+      "files": 583,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\chat-release-20261102",
+      "bytes": 518,
+      "files": 10,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\chat-resume-20261102",
+      "bytes": 366,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\chat-resume-idempotent-20261102",
+      "bytes": 366,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\chat-resume-release-20261102",
+      "bytes": 518,
+      "files": 10,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\chat-student-auto-final-20261102",
+      "bytes": 366,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\concept-keyword-tests-20261104",
+      "bytes": 12530115,
+      "files": 579,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\concept-ledger-final-343f2b88fadc4e0e949bc7d1e8e31f16",
+      "bytes": 12530468,
+      "files": 573,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\concept-ledger-tests-20261104",
+      "bytes": 12530349,
+      "files": 579,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\controls-v4-cpu-4853f30f4024499b907a4218fed36a03",
+      "bytes": 365929,
+      "files": 93,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\correction-comparison-green",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\correction-comparison-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\correction-regression-complete",
+      "bytes": 152,
+      "files": 4,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\correction-regression-final",
+      "bytes": 152,
+      "files": 4,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\correction-regression-recheck",
+      "bytes": 152,
+      "files": 4,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\delivery-http-20261102",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-046efc0e7e18491ea182883fb8485fd0",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-06f42c10906242d19392c9f09a8a304e",
+      "bytes": 405682,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-07fffc576f83413a9e9f88581113cb9c",
+      "bytes": 377010,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-08ecdeb8e44f4197960d8c6c952fe667",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-0d23da28f6c94cada129e82ab7daa0f5",
+      "bytes": 377010,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-155ee1f1bfab4c5991bc39ccdbec7461",
+      "bytes": 582378,
+      "files": 7,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-16045c37e12144129d07d8251aa3cc32",
+      "bytes": 426162,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-19567346685b47188ca8e7cf4a38309e",
+      "bytes": 426162,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-2d1ba4ffd05b46dc81c1e1c5d7224b66",
+      "bytes": 532658,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-2e51ddde862d49158698485d8ceb2f25",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-32b3bceec2664368aa1483a6f10ee558",
+      "bytes": 417970,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-357fd5ec40b54177bbfbe83d82e1447a",
+      "bytes": 503986,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-3cb167a7e0b54ce1a85af42fa549aef6",
+      "bytes": 569522,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-40db523faafc4c91b7131228967a4387",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-4effb04f842e4441951e92be2ce381cc",
+      "bytes": 377010,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-528a9e5333524f899ffc46d0269d2198",
+      "bytes": 426162,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-5b6b3f3e0b1d4aa58b5a746375d7d511",
+      "bytes": 393394,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-5b6fed622bcd405895ae8c9cd499d20a",
+      "bytes": 503986,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-5d07c85c425842bebd8b59490e60be3e",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-5f779d45b76b42e69c28e309ac238051",
+      "bytes": 377010,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-69e1766766924586bfa7b2f49fbd1376",
+      "bytes": 565426,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-6b5daf96bc4e4ed79225bb0602be8eb3",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-6da447a24e6a42f4bec038f356894afe",
+      "bytes": 565426,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-71be978d434642a0907fa2fe03728fa0",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-783f075d3c434b44ba3316b0d562e63d",
+      "bytes": 503986,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-7a281feaa6cf4e759b212e3458c07afb",
+      "bytes": 495794,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-7b807545c3f54ee0b30a9e380d20c987",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-7b8a5d1186b04491ba72c76a4abd74f2",
+      "bytes": 426162,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-7c87bb77f98f4b9ca9e9898cad351f67",
+      "bytes": 393394,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-9a2b490546bc4d999045350d8109f3a1",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-a0f5324f5c914328bca53b7a9138ad42",
+      "bytes": 426162,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-a311d7be8ee24a278b47d585cee6e8bd",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-a50833fb172c4bc287ec6e2dd3328ede",
+      "bytes": 377010,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-a587073e742f473f87c90ca581d53dec",
+      "bytes": 377010,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-a7aa6b2d51a744b6b19efcd390628995",
+      "bytes": 503986,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-ae786ed50a4241e388814918b4fb1e3d",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-b41cf8b360424880b3911069af5a97e5",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-c240ab4e909a4e209d8c3c468d7aede5",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-d0d30449880047c99e86ae250a940831",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-d80ea8239d364ec5be935568d476e706",
+      "bytes": 495794,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-e81ab3fdd15a4fc7bbfed37132a8072f",
+      "bytes": 397490,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-ed5463988e5143f3921631afcd805a55",
+      "bytes": 532658,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-eec0ca9802c8434da56718af9aaf2c75",
+      "bytes": 630962,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-f381c8f73b2948afb86e57b7f8df5c3c",
+      "bytes": 377010,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\e2e-vectors-f3a6ac3484764572a281cf86a81c860d",
+      "bytes": 393394,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\final-controls-tests-42b2a4c8c3b6461c978e61692b2218fc",
+      "bytes": 12573184,
+      "files": 604,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\generated-review-allcourse-20261031",
+      "bytes": 12163244,
+      "files": 480,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\generated-review-profile-20261031",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\gpu-minimal-allcourse-20261031",
+      "bytes": 12163184,
+      "files": 480,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\gpu-minimal-v7-20261031",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\gpu-minimal-v7-20261031b",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\gpu-progress-allcourse-20261031",
+      "bytes": 12163206,
+      "files": 480,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\gpu-progress-regression-20261031b",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\gpu-progress-regression-20261031c",
+      "bytes": 1596,
+      "files": 12,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\i5-recovery-green",
+      "bytes": 152,
+      "files": 4,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\i5-recovery-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\i5-recovery-red-valid",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\minimal-loop-final-20261031",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\presentation-after-20261101",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\presentation-before-20261101",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\presentation-before-escalated-20261101",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\presentation-final-focal-20261101",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\presentation-regression-20261101",
+      "bytes": 12528026,
+      "files": 573,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-connected-web-adapter",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-connected-web-corrected",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-connected-web-delivery",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-connected-web-final",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-connected-web-final-regression",
+      "bytes": 12532889,
+      "files": 617,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-connected-web-first",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-connected-web-frame-fix",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-connected-web-regression",
+      "bytes": 12532798,
+      "files": 617,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-connected-web-second",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-cpu-completion-final",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-cpu-completion-first",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-cpu-completion-main",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-cpu-completion-regression",
+      "bytes": 12533045,
+      "files": 617,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-cpu-completion-report-final",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-cpu-completion-second",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-cpu-launcher-boundaries",
+      "bytes": 22682,
+      "files": 17,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-cpu-launcher-final",
+      "bytes": 16021,
+      "files": 14,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-cpu-launcher-final-all",
+      "bytes": 22852,
+      "files": 18,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-cpu-readiness-final",
+      "bytes": 14610238,
+      "files": 592,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-cpu-readiness-first",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-cpu-readiness-second",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-final-prepared-copy",
+      "bytes": 28982,
+      "files": 18,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-finite-budget",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-finite-v3",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-finite-v3-green",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-gpu-control-final",
+      "bytes": 12528738,
+      "files": 573,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-gpu-final-protocol",
+      "bytes": 366,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-gpu-final-regression",
+      "bytes": 12529792,
+      "files": 589,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-gpu-final4",
+      "bytes": 366,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-gpu-format-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-gpu-reference-green",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-gpu-reference-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-gpu-reference-regression",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-gpu-third-directed",
+      "bytes": 366,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-interface-200",
+      "bytes": 366,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-pilot-copy",
+      "bytes": 3874,
+      "files": 43,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-pilot-first",
+      "bytes": 3190,
+      "files": 35,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-pilot-full",
+      "bytes": 12560162,
+      "files": 625,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-pilot-reuse-real",
+      "bytes": 29879,
+      "files": 43,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-pre-gpu-boundary-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-pre-gpu-complete",
+      "bytes": 30612,
+      "files": 37,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-pre-gpu-diagnose",
+      "bytes": 384,
+      "files": 6,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-pre-gpu-final",
+      "bytes": 30054,
+      "files": 28,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-pre-gpu-first",
+      "bytes": 536,
+      "files": 10,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-pre-gpu-last",
+      "bytes": 642,
+      "files": 10,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-pre-gpu-release",
+      "bytes": 30612,
+      "files": 37,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-pre-gpu-styled",
+      "bytes": 450,
+      "files": 7,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-pre-gpu-trace",
+      "bytes": 192,
+      "files": 3,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-probe-green",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-probe-stage",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-recovery-193",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-study-probe-integration",
+      "bytes": 642,
+      "files": 10,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-study4-cpu",
+      "bytes": 1008,
+      "files": 16,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-study4-regression",
+      "bytes": 12530416,
+      "files": 589,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\pytest-web-passages-first",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-idle-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-locations-final",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-locations-first",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-locations-retest",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-parity-final",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-parity-green",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-parity-green2",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-parity-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-tolerance-green",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-tolerance-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-v4-loop-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-v4-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-variety-final",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-variety-regression",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\review-variety-v4-approved",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\scope-local-cpu-a609df1e8b7a40979e2ade0ea449bf39",
+      "bytes": 12560052,
+      "files": 601,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\thinking-review-finalfocal-20261101",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\thinking-review-finalmodule-20261101",
+      "bytes": 12163254,
+      "files": 480,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\thinking-review-first-20261101",
+      "bytes": 1572,
+      "files": 12,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\thinking-review-module-20261101",
+      "bytes": 12163205,
+      "files": 480,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\thinking-review-specific-20261101",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\variety-http-green",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\variety-http-red",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\web-gpu-frames-green",
+      "bytes": 1492,
+      "files": 12,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\web-gpu-frames-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\web-independent-audit-20261030",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\web-local-patch-green",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\web-local-quote-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\web-review-selector-final",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\web-review-v2-final",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\web-review-v2-green",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\web-review-v2-quote-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\web-review-v2-red",
+      "bytes": 0,
+      "files": 0,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    },
+    {
+      "path": ".claude-scratch\\web-review-v2-regression",
+      "bytes": 308,
+      "files": 1,
+      "links": 0,
+      "reason": "regenerable synthetic test workspace or tool cache"
+    }
+  ],
+  "total_bytes": 287854460,
+  "files": 13015,
+  "count": 182,
+  "evidence_packages_deleted": false,
+  "removed": [
+    ".claude-scratch\\autostudy-approved-20261101",
+    ".claude-scratch\\autostudy-didactic-binding-20261101",
+    ".claude-scratch\\autostudy-final-config-module-20261101",
+    ".claude-scratch\\autostudy-question-approval-20261101",
+    ".claude-scratch\\autostudy-question-final-20261101",
+    ".claude-scratch\\autostudy-unattended-flow-20261101",
+    ".claude-scratch\\black-concept-ledger",
+    ".claude-scratch\\black-maintenance",
+    ".claude-scratch\\black-prepared-concepts",
+    ".claude-scratch\\chat-connected-20261102",
+    ".claude-scratch\\chat-final-rrf-20261102",
+    ".claude-scratch\\chat-first-20261102",
+    ".claude-scratch\\chat-focal-checked-20261102",
+    ".claude-scratch\\chat-focal-final-20261102",
+    ".claude-scratch\\chat-regression-20261102",
+    ".claude-scratch\\chat-release-20261102",
+    ".claude-scratch\\chat-resume-20261102",
+    ".claude-scratch\\chat-resume-idempotent-20261102",
+    ".claude-scratch\\chat-resume-release-20261102",
+    ".claude-scratch\\chat-student-auto-final-20261102",
+    ".claude-scratch\\concept-keyword-tests-20261104",
+    ".claude-scratch\\concept-ledger-final-343f2b88fadc4e0e949bc7d1e8e31f16",
+    ".claude-scratch\\concept-ledger-tests-20261104",
+    ".claude-scratch\\controls-v4-cpu-4853f30f4024499b907a4218fed36a03",
+    ".claude-scratch\\correction-comparison-green",
+    ".claude-scratch\\correction-comparison-red",
+    ".claude-scratch\\correction-regression-complete",
+    ".claude-scratch\\correction-regression-final",
+    ".claude-scratch\\correction-regression-recheck",
+    ".claude-scratch\\delivery-http-20261102",
+    ".claude-scratch\\e2e-vectors-046efc0e7e18491ea182883fb8485fd0",
+    ".claude-scratch\\e2e-vectors-06f42c10906242d19392c9f09a8a304e",
+    ".claude-scratch\\e2e-vectors-07fffc576f83413a9e9f88581113cb9c",
+    ".claude-scratch\\e2e-vectors-08ecdeb8e44f4197960d8c6c952fe667",
+    ".claude-scratch\\e2e-vectors-0d23da28f6c94cada129e82ab7daa0f5",
+    ".claude-scratch\\e2e-vectors-155ee1f1bfab4c5991bc39ccdbec7461",
+    ".claude-scratch\\e2e-vectors-16045c37e12144129d07d8251aa3cc32",
+    ".claude-scratch\\e2e-vectors-19567346685b47188ca8e7cf4a38309e",
+    ".claude-scratch\\e2e-vectors-2d1ba4ffd05b46dc81c1e1c5d7224b66",
+    ".claude-scratch\\e2e-vectors-2e51ddde862d49158698485d8ceb2f25",
+    ".claude-scratch\\e2e-vectors-32b3bceec2664368aa1483a6f10ee558",
+    ".claude-scratch\\e2e-vectors-357fd5ec40b54177bbfbe83d82e1447a",
+    ".claude-scratch\\e2e-vectors-3cb167a7e0b54ce1a85af42fa549aef6",
+    ".claude-scratch\\e2e-vectors-40db523faafc4c91b7131228967a4387",
+    ".claude-scratch\\e2e-vectors-4effb04f842e4441951e92be2ce381cc",
+    ".claude-scratch\\e2e-vectors-528a9e5333524f899ffc46d0269d2198",
+    ".claude-scratch\\e2e-vectors-5b6b3f3e0b1d4aa58b5a746375d7d511",
+    ".claude-scratch\\e2e-vectors-5b6fed622bcd405895ae8c9cd499d20a",
+    ".claude-scratch\\e2e-vectors-5d07c85c425842bebd8b59490e60be3e",
+    ".claude-scratch\\e2e-vectors-5f779d45b76b42e69c28e309ac238051",
+    ".claude-scratch\\e2e-vectors-69e1766766924586bfa7b2f49fbd1376",
+    ".claude-scratch\\e2e-vectors-6b5daf96bc4e4ed79225bb0602be8eb3",
+    ".claude-scratch\\e2e-vectors-6da447a24e6a42f4bec038f356894afe",
+    ".claude-scratch\\e2e-vectors-71be978d434642a0907fa2fe03728fa0",
+    ".claude-scratch\\e2e-vectors-783f075d3c434b44ba3316b0d562e63d",
+    ".claude-scratch\\e2e-vectors-7a281feaa6cf4e759b212e3458c07afb",
+    ".claude-scratch\\e2e-vectors-7b807545c3f54ee0b30a9e380d20c987",
+    ".claude-scratch\\e2e-vectors-7b8a5d1186b04491ba72c76a4abd74f2",
+    ".claude-scratch\\e2e-vectors-7c87bb77f98f4b9ca9e9898cad351f67",
+    ".claude-scratch\\e2e-vectors-9a2b490546bc4d999045350d8109f3a1",
+    ".claude-scratch\\e2e-vectors-a0f5324f5c914328bca53b7a9138ad42",
+    ".claude-scratch\\e2e-vectors-a311d7be8ee24a278b47d585cee6e8bd",
+    ".claude-scratch\\e2e-vectors-a50833fb172c4bc287ec6e2dd3328ede",
+    ".claude-scratch\\e2e-vectors-a587073e742f473f87c90ca581d53dec",
+    ".claude-scratch\\e2e-vectors-a7aa6b2d51a744b6b19efcd390628995",
+    ".claude-scratch\\e2e-vectors-ae786ed50a4241e388814918b4fb1e3d",
+    ".claude-scratch\\e2e-vectors-b41cf8b360424880b3911069af5a97e5",
+    ".claude-scratch\\e2e-vectors-c240ab4e909a4e209d8c3c468d7aede5",
+    ".claude-scratch\\e2e-vectors-d0d30449880047c99e86ae250a940831",
+    ".claude-scratch\\e2e-vectors-d80ea8239d364ec5be935568d476e706",
+    ".claude-scratch\\e2e-vectors-e81ab3fdd15a4fc7bbfed37132a8072f",
+    ".claude-scratch\\e2e-vectors-ed5463988e5143f3921631afcd805a55",
+    ".claude-scratch\\e2e-vectors-eec0ca9802c8434da56718af9aaf2c75",
+    ".claude-scratch\\e2e-vectors-f381c8f73b2948afb86e57b7f8df5c3c",
+    ".claude-scratch\\e2e-vectors-f3a6ac3484764572a281cf86a81c860d",
+    ".claude-scratch\\final-controls-tests-42b2a4c8c3b6461c978e61692b2218fc",
+    ".claude-scratch\\generated-review-allcourse-20261031",
+    ".claude-scratch\\generated-review-profile-20261031",
+    ".claude-scratch\\gpu-minimal-allcourse-20261031",
+    ".claude-scratch\\gpu-minimal-v7-20261031",
+    ".claude-scratch\\gpu-minimal-v7-20261031b",
+    ".claude-scratch\\gpu-progress-allcourse-20261031",
+    ".claude-scratch\\gpu-progress-regression-20261031b",
+    ".claude-scratch\\gpu-progress-regression-20261031c",
+    ".claude-scratch\\i5-recovery-green",
+    ".claude-scratch\\i5-recovery-red",
+    ".claude-scratch\\i5-recovery-red-valid",
+    ".claude-scratch\\minimal-loop-final-20261031",
+    ".claude-scratch\\presentation-after-20261101",
+    ".claude-scratch\\presentation-before-20261101",
+    ".claude-scratch\\presentation-before-escalated-20261101",
+    ".claude-scratch\\presentation-final-focal-20261101",
+    ".claude-scratch\\presentation-regression-20261101",
+    ".claude-scratch\\pytest-connected-web-adapter",
+    ".claude-scratch\\pytest-connected-web-corrected",
+    ".claude-scratch\\pytest-connected-web-delivery",
+    ".claude-scratch\\pytest-connected-web-final",
+    ".claude-scratch\\pytest-connected-web-final-regression",
+    ".claude-scratch\\pytest-connected-web-first",
+    ".claude-scratch\\pytest-connected-web-frame-fix",
+    ".claude-scratch\\pytest-connected-web-regression",
+    ".claude-scratch\\pytest-connected-web-second",
+    ".claude-scratch\\pytest-cpu-completion-final",
+    ".claude-scratch\\pytest-cpu-completion-first",
+    ".claude-scratch\\pytest-cpu-completion-main",
+    ".claude-scratch\\pytest-cpu-completion-regression",
+    ".claude-scratch\\pytest-cpu-completion-report-final",
+    ".claude-scratch\\pytest-cpu-completion-second",
+    ".claude-scratch\\pytest-cpu-launcher-boundaries",
+    ".claude-scratch\\pytest-cpu-launcher-final",
+    ".claude-scratch\\pytest-cpu-launcher-final-all",
+    ".claude-scratch\\pytest-cpu-readiness-final",
+    ".claude-scratch\\pytest-cpu-readiness-first",
+    ".claude-scratch\\pytest-cpu-readiness-second",
+    ".claude-scratch\\pytest-final-prepared-copy",
+    ".claude-scratch\\pytest-finite-budget",
+    ".claude-scratch\\pytest-finite-v3",
+    ".claude-scratch\\pytest-finite-v3-green",
+    ".claude-scratch\\pytest-gpu-control-final",
+    ".claude-scratch\\pytest-gpu-final-protocol",
+    ".claude-scratch\\pytest-gpu-final-regression",
+    ".claude-scratch\\pytest-gpu-final4",
+    ".claude-scratch\\pytest-gpu-format-red",
+    ".claude-scratch\\pytest-gpu-reference-green",
+    ".claude-scratch\\pytest-gpu-reference-red",
+    ".claude-scratch\\pytest-gpu-reference-regression",
+    ".claude-scratch\\pytest-gpu-third-directed",
+    ".claude-scratch\\pytest-interface-200",
+    ".claude-scratch\\pytest-pilot-copy",
+    ".claude-scratch\\pytest-pilot-first",
+    ".claude-scratch\\pytest-pilot-full",
+    ".claude-scratch\\pytest-pilot-reuse-real",
+    ".claude-scratch\\pytest-pre-gpu-boundary-red",
+    ".claude-scratch\\pytest-pre-gpu-complete",
+    ".claude-scratch\\pytest-pre-gpu-diagnose",
+    ".claude-scratch\\pytest-pre-gpu-final",
+    ".claude-scratch\\pytest-pre-gpu-first",
+    ".claude-scratch\\pytest-pre-gpu-last",
+    ".claude-scratch\\pytest-pre-gpu-release",
+    ".claude-scratch\\pytest-pre-gpu-styled",
+    ".claude-scratch\\pytest-pre-gpu-trace",
+    ".claude-scratch\\pytest-probe-green",
+    ".claude-scratch\\pytest-probe-stage",
+    ".claude-scratch\\pytest-recovery-193",
+    ".claude-scratch\\pytest-study-probe-integration",
+    ".claude-scratch\\pytest-study4-cpu",
+    ".claude-scratch\\pytest-study4-regression",
+    ".claude-scratch\\pytest-web-passages-first",
+    ".claude-scratch\\review-idle-red",
+    ".claude-scratch\\review-locations-final",
+    ".claude-scratch\\review-locations-first",
+    ".claude-scratch\\review-locations-retest",
+    ".claude-scratch\\review-parity-final",
+    ".claude-scratch\\review-parity-green",
+    ".claude-scratch\\review-parity-green2",
+    ".claude-scratch\\review-parity-red",
+    ".claude-scratch\\review-tolerance-green",
+    ".claude-scratch\\review-tolerance-red",
+    ".claude-scratch\\review-v4-loop-red",
+    ".claude-scratch\\review-v4-red",
+    ".claude-scratch\\review-variety-final",
+    ".claude-scratch\\review-variety-regression",
+    ".claude-scratch\\review-variety-v4-approved",
+    ".claude-scratch\\scope-local-cpu-a609df1e8b7a40979e2ade0ea449bf39",
+    ".claude-scratch\\thinking-review-finalfocal-20261101",
+    ".claude-scratch\\thinking-review-finalmodule-20261101",
+    ".claude-scratch\\thinking-review-first-20261101",
+    ".claude-scratch\\thinking-review-module-20261101",
+    ".claude-scratch\\thinking-review-specific-20261101",
+    ".claude-scratch\\variety-http-green",
+    ".claude-scratch\\variety-http-red",
+    ".claude-scratch\\web-gpu-frames-green",
+    ".claude-scratch\\web-gpu-frames-red",
+    ".claude-scratch\\web-independent-audit-20261030",
+    ".claude-scratch\\web-local-patch-green",
+    ".claude-scratch\\web-local-quote-red",
+    ".claude-scratch\\web-review-selector-final",
+    ".claude-scratch\\web-review-v2-final",
+    ".claude-scratch\\web-review-v2-green",
+    ".claude-scratch\\web-review-v2-quote-red",
+    ".claude-scratch\\web-review-v2-red",
+    ".claude-scratch\\web-review-v2-regression"
+  ],
+  "skipped": [],
+  "errors": [],
+  "extra_removed": [
+    {
+      "path": ".e2e_governance.db",
+      "bytes": 1282048,
+      "reason": "inactive deterministic E2E database"
+    },
+    {
+      "path": ".e2e_governance.db-wal",
+      "bytes": 4239512,
+      "reason": "inactive deterministic E2E database"
+    },
+    {
+      "path": ".e2e_governance.db-shm",
+      "bytes": 32768,
+      "reason": "inactive deterministic E2E database"
+    },
+    {
+      "path": ".e2e_self_study.db",
+      "bytes": 4096,
+      "reason": "inactive deterministic E2E database"
+    },
+    {
+      "path": ".e2e_self_study.db-wal",
+      "bytes": 626272,
+      "reason": "inactive deterministic E2E database"
+    },
+    {
+      "path": ".e2e_self_study.db-shm",
+      "bytes": 32768,
+      "reason": "inactive deterministic E2E database"
+    },
+    {
+      "path": "test-results/.last-run.json",
+      "bytes": 45,
+      "reason": "obsolete last-run status without screenshots/traces"
+    },
+    {
+      "path": ".oralia-demo.lock",
+      "bytes": 1,
+      "reason": "stale PID 0 lock; no ORALIA service running"
+    }
+  ],
+  "protected_files_checked": 468,
+  "protected_changed_or_missing": [],
+  "applied": true,
+  "obsolete_builds_removed": [
+    {
+      "path": ".claude-scratch\\study-chat-20261102-214344-733acca4\\web-dist",
+      "bytes": 265806,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261102-214929-1f85072b\\web-dist",
+      "bytes": 265806,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261103-011415-d83dc9cc\\web-dist",
+      "bytes": 269368,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261103-012534-1d2a4e74\\web-dist",
+      "bytes": 269368,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261103-022529-2ad846de\\web-dist",
+      "bytes": 269368,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261103-022833-cbc81075\\web-dist",
+      "bytes": 269368,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261103-111847-5becfd9d\\web-dist",
+      "bytes": 269368,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261103-112104-80d4d183\\web-dist",
+      "bytes": 269368,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261103-125018-5778358c\\web-dist",
+      "bytes": 269368,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261104-093313-c932b24a\\web-dist",
+      "bytes": 269368,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261104-175ac3f6\\web-dist",
+      "bytes": 269368,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261104-260f2c08\\web-dist",
+      "bytes": 269368,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261104-b58709ab\\web-dist",
+      "bytes": 269368,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261104-b6d894d9\\web-dist",
+      "bytes": 269368,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    },
+    {
+      "path": ".claude-scratch\\study-chat-20261105-113833-e84d8be1\\web-dist",
+      "bytes": 269368,
+      "files": 3,
+      "reason": "compiled UI/cache from preparation already invalidated by source changes"
+    }
+  ],
+  "reclaimed_bytes": 298105366,
+  "policy": "Remove regenerable inactive test workspaces, synthetic E2E databases and compiled builds of already-invalid preparations; not deletion by age alone.",
+  "live_data_present": {
+    "oralia_db": true,
+    "oralia_data": true
+  }
+}

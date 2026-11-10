@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "sha256": {
+    "development.json": "373b576dd6dfc1ccab79a571fa58a1d005dd05afee57fdfce97df48a54eb02bb",
+    "holdout.json": "0e256c5219be3e76fcab9d982b88d60f2642f4c652b331807a5e59c6e3856a94",
+    "holdout-inputs.json": "774762f9e442ac34b60c7220851ef5ea73fa0312bd0583b0cb6057f44a74075d"
+  },
+  "status": "frozen_before_production_changes",
+  "independent_entries": "48 frozen; not executed. Prepared before integration, after initial isolated v2 contract implementation; disclose this order as a limitation.",
+  "human_review": "Not claimed; synthetic engineering review only."
+}

@@ -1,0 +1,71 @@
+{
+  "annotation": "New AI engineering combinations; earlier two failed reserves preserved, no independent human review",
+  "cases": [
+    {
+      "case_id": "PK01",
+      "partition": "reserved_cycle_3",
+      "domain": "agua",
+      "steps": [
+        "Hola",
+        "¿Qué significa la evaporación del agua?",
+        "¿Por qué se evapora el agua?",
+        "Dímelo"
+      ],
+      "expected": [
+        "greeting",
+        "definition",
+        "cause",
+        "repeat"
+      ]
+    },
+    {
+      "case_id": "PK02",
+      "partition": "reserved_cycle_3",
+      "domain": "agua",
+      "steps": [
+        "Explícame en pasos cómo se condensa el vapor",
+        "¿Cómo se llama ese cambio?",
+        "¿Por qué hay gotas en un vaso frío?",
+        "No lo entiendo"
+      ],
+      "expected": [
+        "process",
+        "definition",
+        "cause",
+        "cause_alternative"
+      ]
+    },
+    {
+      "case_id": "PK03",
+      "partition": "reserved_cycle_3",
+      "domain": "programa",
+      "steps": [
+        "¿Puede almacenarse un registro sin validación?",
+        "¿Qué es el control de validación?",
+        "¿Cómo valida el programa un registro?"
+      ],
+      "expected": [
+        "possibility",
+        "definition",
+        "process"
+      ]
+    },
+    {
+      "case_id": "PK04",
+      "partition": "reserved_cycle_3",
+      "domain": "programa",
+      "steps": [
+        "¿Cómo se llama la comprobación previa al almacenamiento?",
+        "¿Por qué se valida antes de guardar?",
+        "No lo entiendo",
+        "Repite literalmente lo último"
+      ],
+      "expected": [
+        "definition",
+        "cause",
+        "cause_alternative",
+        "repeat"
+      ]
+    }
+  ]
+}

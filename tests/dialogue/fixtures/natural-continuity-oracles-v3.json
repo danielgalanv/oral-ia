@@ -1,0 +1,65 @@
+{
+  "study": {
+    "agua-docx": {
+      "reserved_third": [
+        [
+          "cause"
+        ],
+        [
+          "molecular-fact"
+        ],
+        [
+          "alternative",
+          "process-support"
+        ],
+        [
+          "process"
+        ],
+        [
+          "possibility"
+        ]
+      ]
+    },
+    "programa-docx": {
+      "reserved_third": [
+        [
+          "functional-definition"
+        ],
+        [
+          "causal-order"
+        ],
+        [
+          "example-1"
+        ],
+        [
+          "example-2",
+          "possibility"
+        ],
+        [
+          "possibility"
+        ]
+      ]
+    },
+    "datos-pdf": {
+      "reserved_third": [
+        [
+          "definition"
+        ],
+        [
+          "causal-count"
+        ],
+        [
+          "count-fact",
+          "ausentes-definition"
+        ],
+        [
+          "process"
+        ],
+        [
+          "mediana-definition",
+          "mediana-process"
+        ]
+      ]
+    }
+  }
+}

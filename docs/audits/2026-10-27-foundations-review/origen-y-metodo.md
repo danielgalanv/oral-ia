@@ -1,0 +1,27 @@
+# Origen de requisitos y límites de la revisión
+
+El documento conceptual original se encontró en docs como un DOCX. Se leyó mediante ZIP/OOXML, sin modificarlo, con la skill de documentos. [Extracción numerada](conceptual-original.txt), [JSON y hash original](conceptual-original.json). Se extraen 1.997 párrafos no vacíos del cuerpo; Pxxxx conserva posición OOXML. No se audita diseño visual, tablas, autoría ni historial de cambios de Word. No se entrega un DOCX nuevo.
+
+El tramo P0001–P1037 trata la arquitectura cognitiva general, con robots y horizontes largos; P1040 inicia «Arquitectura cognitiva mínima de ORAL-IA». No transferir obligaciones robóticas, emocionales, biométricas, autodesarrollo o perfiles longitudinales al MVP docente. P1043–P1054 explica finalidad; P1954–P1983 distingue comparación arquitectónica, validez técnica y utilidad de piloto. P1971 pide detección de una parte significativa de salidas no fundamentadas, no una prueba formal universal de toda frase.
+
+## Jerarquía de autoridad aplicada
+
+| Tipo | Origen disponible | Cómo se usa |
+|---|---|---|
+| Decisión humana actual confirmada en este encargo | Tutor autónomo por chat, RAG docente, sin respuestas académicas predefinidas; ficción coherente válida; referencias generales suficientes, exactitud interna; voz pospuesta; alcance docente confirmado; no excluir por recuperación vacía | Autoridad actual para esta auditoría. Se reciben en el encargo y sus aclaraciones; no se inventa un archivo de conversación original ni autor adicional. |
+| Constitución vigente | [.specify/memory/constitution.md](../../../.specify/memory/constitution.md) | Restricción operativa: local, supervisión, privacidad, separación, no web en sesión ni evaluación académica. Su cabecera ratificada es un artefacto; no se recuperó aquí el acta humana de cada redacción. Sigue vigente. |
+| Conceptual original | Apartado específico ORAL-IA del DOCX | Contexto y requisitos de intención. Su existencia no acredita autoría humana o ratificación literal de todos los detalles. No prevalece sobre decisiones actuales. |
+| Paquete editorial | [SOURCE_MAPPING](../../../docs/ORAL-IA_SpecKit/SOURCE_MAPPING.md), [aclaraciones recomendadas](../../../docs/ORAL-IA_SpecKit/10_clarification_decisions.md), [plan propuesto](../../../docs/ORAL-IA_SpecKit/11_plan_prompt.md) | Transformación/recomendación técnica, no transcripción del usuario. Elegir SQLite, 800 caracteres o una caché no se convierte en petición humana por aparecer en un plan. |
+| Especificaciones001–012 | [Texto leído](specifications-read.txt), [registro FR/SC](requirements-register.json), [CSV](requirements-register.csv) | Obligaciones versionadas y aceptación declarada. Los mapas existentes son afirmaciones a contrastar, no prueba de cumplimiento. |
+| Restricción experimental | Modelo, greedy, NF4, 512 tokens, parar al primer fallo, banco congelado, tres repeticiones | Puede ser condición vigente de un ensayo/gate, no ley universal del producto. Cambiarla prospectivamente requiere su procedimiento y presupuesto; no se cambia retroactivamente. |
+| Interpretación del auditor | Hallazgos, arquitectura, backlog y criterios nuevos | Propuesta técnica, nunca permiso automático ni nueva constitución. |
+
+## Registro recuperado
+
+Se recorrieron las doce specs de raíz, recogiendo 418 identificadores FR/SC únicos por feature cuando aparecen en filas o bullets, con línea, primera línea de texto y correspondencias literales del requirement-coverage existente. Las continuaciones están en la spec completa; no se afirma que el CSV reproduzca todo el texto de cada requisito. Los escenarios sin ID, edge cases y decisiones se cubren por la matriz interpretada, no están contados como FR adicionales. Los mapas no encontrados se mantienen vacíos y los encontrados no se aprueban automáticamente. No se recuperaron conversaciones originales completas que demuestren aprobación humana de cada adenda, umbral o tecnología; esa brecha se declara, no se rellena.
+
+Esta revisión inspeccionó componentes de autorización, privacidad/cierre, acceso HTTP, extracción, segmentación, embeddings/índice, recuperación, worker/adaptador, referencias, historial y launcher. No es revisión exhaustiva de cada línea ni pentest. No se ejecutaron rutas contra bases habituales ni servicios. Las reproducciones usan AST aislado, modelos falsos y datos sintéticos, con resultados separados de inferencia real. El original, los scripts y268fuentes tienen hashes en [manifiesto](source-manifest.json); no es snapshot transaccional ni certificado histórico.
+
+El informe anterior llamaba aprovechable a la infraestructura dentro de escenarios probados. Este segundo informe reduce la confianza general de esa valoración ante el defecto de caché y las fronteras no verificadas; no invalida automáticamente todas las pruebas anteriores. «No se ha identificado una solución viable para estas condiciones» en la primera auditoría debe leerse como ausencia de una solución ya validada para adopción en el gate actual, no prueba de inviabilidad técnica del objetivo o de los métodos publicados.
+
+Investigación web nueva: fuentes primarias y repositorios oficiales, consultas técnicas genéricas, sin documentos, rutas ni conversaciones privadas. No se descargan pesos ni se instalan dependencias. La falta de acceso al cuerpo de una página se señala en el anexo y no se inventan sus resultados. No hay commits, Reset, cambios de tareas o delegación a implementadores.

@@ -1,0 +1,15 @@
+# Guion vigente para la siguiente prueba GPU
+
+Este guion sustituye operativamente al anterior que esperaba bloquear el envío después de doce preguntas. El anterior queda conservado como evidencia fechada: **el autoestudio normal no tiene cupo educativo**. Los presupuestos de experimentos explícitos son otra modalidad, no el comportamiento por defecto.
+
+No se inicia nada automáticamente. Antes del ensayo confirmar autorización y disponibilidad de GPU; no cerrar procesos ajenos. El runtime comprueba capacidad antes de cargar y la vuelve a comprobar antes del revisor. Los rechazos de recursos no son errores académicos.
+
+1. Validar la preparación CPU registrada en `retrieval-check.json`; si el código cambió, preparar una nueva. Pasar al lanzador `-PreparedRun` con esa carpeta y `-WebPolicy` con el catálogo v2 del dossier `2026-11-03-cpu-completion`. Ese comando futuro carga modelos reales; no se ejecutó durante esta auditoría.
+2. Abrir `/estudio`, Comenzar y reutilizar las [doce preguntas aprobadas](../2026-11-01-autostudy-approval/questions.md), cuya [confirmación](../2026-11-01-autostudy-approval/approval.json) se conserva. Registrar qué conversación e historial se usaron: el ensayo histórico agrupaba tres conversaciones de cuatro turnos y no es equivalente a doce turnos continuos.
+3. Revisar definición/tipos, ejemplo funcional/no funcional, aclaración, dato hipotético de 0,3 segundos, comprobabilidad, trazabilidad, completitud/consistencia y conflicto. El cambio de tema es una pregunta normal, sin botón. Evaluar la respuesta de ORALIA, no al alumno. Coherencia hipotética, repetición o mejoras opcionales no son errores por sí mismos.
+4. Comprobar fuentes locales y, cuando el control real encuentre insuficiencia dentro de alcance, aviso previo, información externa identificada y URL. No inyectar suficiencia o forzar una descarga y presentarlo como prueba de decisión autónoma. Si no hay un caso web, registrarlo sin inventarlo ni dar ese recorrido por validado.
+5. Al completar las doce preguntas, el modo normal sigue permitiendo enviar, sujeto a los plazos técnicos. No exigir que se bloquee ni consumir otra pregunta solo para comprobarlo: esa ausencia de cupo ya tiene prueba CPU de 34 preguntas. No usar la reserva histórica ni modificar presupuestos de ensayos anteriores.
+6. Finalizar permite descargar JSON/Markdown y Seguir estudiando o descartar. Revisar proveedor identificado, texto mostrado, fuentes y datos descriptivos; no hay audio ni notas. La copia descargada permanece local; cerrar purga la memoria del programa.
+7. Cancelación, caída del worker y recuperación real se ensayan separadamente si pueden impedir completar la conversación académica. Conservar respuestas truncadas, errores y tiempos, sin atribuir causalidad a la GPU compartida o calidad al éxito técnico. No modificar fuentes/oráculos para hacer pasar una salida.
+
+El ensayo debe separar: corrección académica, objeción infundada, mejora opcional, fallo técnico y límite seguro. Una crítica favorable no acredita por sí sola la calidad. T191, revisión docente, G2/SC001 y publicación no se cierran con las comprobaciones CPU.

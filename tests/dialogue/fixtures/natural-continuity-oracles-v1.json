@@ -1,0 +1,127 @@
+{
+  "annotation": "Purpose-specific unit suffix expectations authored before production changes; exact output/authorizer verdict is not the semantic oracle. Human quality remains pending.",
+  "study": {
+    "agua-docx": {
+      "development": [
+        [
+          "cause"
+        ],
+        [
+          "alternative"
+        ],
+        [
+          "cause"
+        ],
+        [
+          "process"
+        ],
+        [
+          "alternative",
+          "process-support"
+        ]
+      ],
+      "reserved_first": [
+        [
+          "process",
+          "possibility"
+        ],
+        [
+          "alternative"
+        ],
+        [
+          "cause"
+        ],
+        [
+          "process"
+        ],
+        [
+          "alternative",
+          "process-support"
+        ]
+      ]
+    },
+    "programa-docx": {
+      "development": [
+        [
+          "definition"
+        ],
+        [
+          "causal-order"
+        ],
+        [
+          "example-1"
+        ],
+        [
+          "example-2",
+          "possibility"
+        ],
+        [
+          "possibility"
+        ]
+      ],
+      "reserved_first": [
+        [
+          "definition"
+        ],
+        [
+          "causal-order"
+        ],
+        [
+          "example-1"
+        ],
+        [
+          "example-2",
+          "possibility"
+        ],
+        [
+          "possibility"
+        ]
+      ]
+    },
+    "datos-pdf": {
+      "development": [
+        [
+          "definition"
+        ],
+        [
+          "causal-count"
+        ],
+        [
+          "count-fact"
+        ],
+        [
+          "process"
+        ],
+        [
+          "mediana-process",
+          "mediana-definition"
+        ]
+      ],
+      "reserved_first": [
+        [
+          "definition"
+        ],
+        [
+          "causal-count"
+        ],
+        [
+          "count-fact",
+          "ausentes-definition"
+        ],
+        [
+          "process"
+        ],
+        [
+          "mediana-process",
+          "mediana-definition"
+        ]
+      ]
+    }
+  },
+  "defense": [
+    "each answer must refer to emitted original/current follow-up question",
+    "no invented grade or correct/incorrect verdict",
+    "distinct follow-up questions for successive participant claims, or an explicit justified limit if no reviewed support",
+    "original question persists until confirmed topic change"
+  ]
+}

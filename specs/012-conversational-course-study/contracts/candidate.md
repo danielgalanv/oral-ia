@@ -1,0 +1,19 @@
+# Contrato candidato didáctico v1
+
+No equivale a salida autorizada. Entrada: pregunta sintética actual, historial real acotado, objetivo/referente/pregunta pendiente y páginas permitidas. Salida cerrada con segmentos tipados y referencias exactas; ejemplo ficticio identifica supuestos. Fuentes son datos, nunca instrucciones. Ningún segmento queda sin clasificar.
+
+Validación independiente: referencias existen en corpus vigente, testigo literal existe en página/hash, literal exactamente igual, paráfrasis/ejemplo no se autoriza por esa coincidencia. No aceptar autoasignación de review/G2 o campos extra. Verificación académica/contextual y no revelación necesarias separadamente. Una negativa de cualquier gate impide publicación. Candidata en memoria/sandbox sintético puede inspeccionarse con rótulo inequívoco y captura íntegra explícita; no se registra como turno participante exitoso.
+
+Ruta productiva mantiene OutputProposal/schema1 intactos hasta que una versión sucesora aporte operaciones derivadas reconstruibles y prueba semántica independiente suficiente. Ausencia de prueba = gate cerrado; ningún fallback extractivo cuenta como conversación generativa aprobada.
+
+GenerationRequest admite output_schema opcional (None por defecto); Ollama envía format únicamente cuando el llamador opta por ese esquema. La salida estructurada solo restringe formato, no verdad. Documentación primaria: https://github.com/ollama/ollama/blob/main/docs/api.md y https://ollama.com/blog/structured-outputs . No hay llamadas externas de inferencia.
+
+## V2 — contrato compacto exclusivo del laboratorio A/B/C
+
+`CandidateV2` contiene `answer`, `source_ids` (hasta cuatro páginas), `assumptions`, `question` opcional y `limitation` opcional. Una respuesta sin páginas debe declarar su límite; un ejemplo inventado debe explicitar supuestos en lenguaje natural, pero la presencia del campo no prueba que sean pertinentes. Las páginas citadas deben pertenecer a las recuperadas. Esto es una observación estructural; la pertinencia, el apoyo de cada afirmación y la cobertura requieren verificación semántica independiente antes de cualquier autorización.
+
+Revisión acotada tras el ensayo de consistencia: V2 añade `example` explícito. Un `example` exige supuestos; pedir un ejemplo y recibir solo una definición produce `requested_example_missing`, sin publicar el parcial. Si el modelo rellena `assumptions` sin ejemplo, ese campo no se muestra y se registra `orphan_assumptions_hidden`; no se trata como ejemplo ni como hecho validado. Una pregunta que copie literalmente una pregunta visible del usuario se omite de la presentación y del estado pendiente; el valor bruto permanece en el recibo de laboratorio. Son controles de estructura y eco, no pruebas de verdad, originalidad o calidad didáctica. Los ensayos previos permanecen sin editar.
+
+Tras la captura del 2026-10-25, la comparación de eco de `question` cubre también la entrada completa y la petición imperativa sin prefacio citado; una repetición explícitamente pedida de la pregunta pendiente y preguntas nuevas se conservan. El filtro nunca reescribe `answer`. El recibo expone `academic_topic` y `current_request` por separado: soporte/ejemplo usa el tema anterior, no la orden anterior; cambio de foco explícito reemplaza el tema. `input` y `literal_query` conservan el texto original. Es una corrección determinista del laboratorio, aún sin nuevo ensayo real ni validación semántica.
+
+El recibo conserva `raw_candidate` y fin efectivo del proveedor. `displayed_text`/`display_kind` registran la intervención realmente mostrada: candidata completa o aviso operativo. JSON inválido, timeout y `finish_reason=length` no se muestran como enseñanza, aunque el JSON parcial pueda analizarse para diagnóstico. Los avisos operativos forman parte del historial visible; no sustituyen el último referente académico mostrado. V1, T090/T150, estado de sesión y gates de publicación siguen intactos.

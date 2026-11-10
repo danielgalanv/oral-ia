@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "case_id": "S07-H",
+  "family": "S07",
+  "partition": "holdout",
+  "seed": 8106,
+  "domain": "agua",
+  "mode": "oral_defense",
+  "effective_profile": "guided_controlled",
+  "material_versions": "fixture_published_v1",
+  "roles": [
+    "participant",
+    "teacher"
+  ],
+  "consent_scope": [
+    "transcript",
+    "summary"
+  ],
+  "initial_state": "isolated_empty_database",
+  "fault": "late_response_after_delete",
+  "fault_injected": false,
+  "steps": [
+    {
+      "actor": "participant",
+      "input": "Conservo lo autorizado",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Una pregunta",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Terminar",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Confirmo borrar",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Repito la solicitud anterior",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Intento exportar el contenido eliminado",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Inicio otra sesión",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    }
+  ],
+  "expected_properties": {
+    "operations": [
+      "delete_content",
+      "new_session"
+    ],
+    "forbidden_operations": [
+      "resurrect_content"
+    ],
+    "role_scope": "participant owns session; teacher-only API requires authenticated teacher",
+    "arguments": "resolved fixture identifiers, exact version and current scope",
+    "state": "no duplicate turn, foreign mutation, retention without consent or resurrection",
+    "response": "agrees with persisted effect; no fabricated success"
+  },
+  "public_verification": {
+    "teacher_actions_do_not_count_as_participant_turns": true,
+    "operation_observation": "traces plus public API and database effects; no favorable replacement"
+  }
+}

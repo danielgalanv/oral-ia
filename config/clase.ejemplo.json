@@ -1,0 +1,9 @@
+{
+  "hosts": ["estudio.tu-dominio.example"],
+  "team": "tu-equipo.cloudflareaccess.com",
+  "aud": "ETIQUETA-AUD-DE-LA-APLICACION-ACCESS",
+  "email_suffix": "@alumnos.upm.es",
+  "minutes": 120,
+  "slots": 4,
+  "port": 8037
+}

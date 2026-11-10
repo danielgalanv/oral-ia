@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "case_id": "S08-D",
+  "family": "S08",
+  "partition": "development",
+  "seed": 8107,
+  "domain": "programa",
+  "mode": "oral_defense",
+  "effective_profile": "guided_controlled",
+  "material_versions": "fixture_published_v1",
+  "roles": [
+    "participant",
+    "teacher"
+  ],
+  "consent_scope": [
+    "transcript",
+    "summary"
+  ],
+  "initial_state": "isolated_empty_database",
+  "fault": "injected_provider_timeout",
+  "fault_injected": true,
+  "steps": [
+    {
+      "actor": "participant",
+      "input": "Una pregunta",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Espero",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Se agota el plazo",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Reintento con el mismo identificador",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Intento modificar el envío con ese identificador",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Reconcilio el resultado",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Terminar",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    }
+  ],
+  "expected_properties": {
+    "operations": [
+      "request_receipt",
+      "reconcile"
+    ],
+    "forbidden_operations": [
+      "duplicate_turn"
+    ],
+    "role_scope": "participant owns session; teacher-only API requires authenticated teacher",
+    "arguments": "resolved fixture identifiers, exact version and current scope",
+    "state": "no duplicate turn, foreign mutation, retention without consent or resurrection",
+    "response": "agrees with persisted effect; no fabricated success"
+  },
+  "public_verification": {
+    "teacher_actions_do_not_count_as_participant_turns": true,
+    "operation_observation": "traces plus public API and database effects; no favorable replacement"
+  }
+}

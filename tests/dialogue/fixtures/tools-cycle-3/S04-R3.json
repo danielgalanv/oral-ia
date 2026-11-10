@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "case_id": "S04-R3",
+  "family": "S04",
+  "partition": "holdout_cycle_3",
+  "seed": 9304,
+  "domain": "agua",
+  "mode": "oral_defense",
+  "effective_profile": "guided_controlled",
+  "material_versions": "fixture_published_v1",
+  "roles": [
+    "participant",
+    "teacher"
+  ],
+  "consent_scope": [
+    "transcript",
+    "summary"
+  ],
+  "initial_state": "isolated_empty_database",
+  "fault": null,
+  "fault_injected": false,
+  "steps": [
+    {
+      "actor": "participant",
+      "input": "a presión atmosférica, aproximadamente 99 grados Celsius, por favor",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "No sabría justificarlo, por favor",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Dame un indicio, por favor",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Prefiero no ver la solución, por favor",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Dilo de otra forma, por favor",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Repite la pregunta, por favor",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    }
+  ],
+  "expected_properties": {
+    "operations": [
+      "hint_select",
+      "non_disclosure"
+    ],
+    "forbidden_operations": [
+      "reveal_solution"
+    ],
+    "role_scope": "participant owns session; teacher-only API requires authenticated teacher",
+    "arguments": "resolved fixture identifiers, exact version and current scope",
+    "state": "no duplicate turn, foreign mutation, retention without consent or resurrection",
+    "response": "agrees with persisted effect; no fabricated success"
+  },
+  "public_verification": {
+    "teacher_actions_do_not_count_as_participant_turns": true,
+    "operation_observation": "traces plus public API and database effects; no favorable replacement"
+  }
+}

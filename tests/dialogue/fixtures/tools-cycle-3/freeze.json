@@ -1,0 +1,14 @@
+{
+  "created_at_utc": "2026-10-19T13:42:42.976245+00:00",
+  "sha256": {
+    "S01-R3.json": "af0079a41902a6ee8c64bc736f4ee6373b38d9892a0a2d4af56ae1a9972c6483",
+    "S02-R3.json": "6943b060b3af82a208addae00c28605303fc6d23eeea07993c43fff82f28f548",
+    "S03-R3.json": "91e582502d92203691d26b83103c1f6b4cac5fb396af33bb705ec3ac738345ad",
+    "S04-R3.json": "921ef012c26e46fda06aab32a0955ea43991ce449749015a6e9790c7ccd87732",
+    "S05-R3.json": "130b3ac38c343ad2ee78545bc6632eaa7c60fdeadea9376be3c147d3a1914670",
+    "S06-R3.json": "a33623fe882e7f884f7c52a419b23aff4f8c37368f86e0cb8646ac859fcb3bb4",
+    "S07-R3.json": "c5c75e90654439f276f474053dd75e3a30e08a81e765f1e8d6e0a180ca4b616f",
+    "S08-R3.json": "8a9492162183933574a091e33742fe59631ca4f6efb7168bfeb84e680e840ab0"
+  },
+  "review": "New cross-mode variants, explicit manually reviewed expected_terminal at each step; all original and cycle-2 failures preserved. Narrative-to-public-operation harness, not autonomous tool selection. No runtime reply used as oracle."
+}

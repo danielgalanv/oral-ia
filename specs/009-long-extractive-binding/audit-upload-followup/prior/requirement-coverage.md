@@ -1,0 +1,20 @@
+# Cobertura009 final
+
+| Requisito | Tareas |
+|---|---|
+| FR-001 | T002 |
+| FR-002 | T003,T004,T005,T012 |
+| FR-003 | T003,T004,T005 |
+| FR-004 | T005,T006,T012 |
+| FR-005 | T002,T005,T006,T008 |
+| FR-006 | T007,T013,T014 |
+| FR-007 | T001,T008,T009,T014,T015 |
+| FR-008 | T008,T014,T015 |
+| FR-009 | T010 |
+| FR-010 | T011 |
+| SC-001 | T002,T003,T012 |
+| SC-002 | T003,T005,T006 |
+| SC-003 | T002,T006,T007,T008,T013,T014 |
+| SC-004 | T001,T008,T009,T011,T014,T015 |
+
+14/14requisitos;15tareas incluyendo4de convergencia;0huérfanas.

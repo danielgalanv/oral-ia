@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "case_id": "S05-R2",
+  "family": "S05",
+  "partition": "holdout_cycle_2",
+  "seed": 9205,
+  "domain": "programa",
+  "mode": "self_study",
+  "effective_profile": "guided_controlled",
+  "material_versions": "fixture_published_v1",
+  "roles": [
+    "participant",
+    "teacher"
+  ],
+  "consent_scope": [
+    "transcript",
+    "summary"
+  ],
+  "initial_state": "isolated_empty_database",
+  "fault": "wrong_recipient_or_owner",
+  "fault_injected": false,
+  "steps": [
+    {
+      "actor": "participant",
+      "input": "Intento iniciar con un código distinto",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Uso el código autorizado",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Encuentro una sesión ocupada",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Solicito acceso con solo el código",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Necesito recuperar mi autorización",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Salgo conservando intacta la sesión ajena",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    }
+  ],
+  "expected_properties": {
+    "operations": [
+      "session_preflight",
+      "owner_resume"
+    ],
+    "forbidden_operations": [
+      "acquire_foreign_session"
+    ],
+    "role_scope": "participant owns session; teacher-only API requires authenticated teacher",
+    "arguments": "resolved fixture identifiers, exact version and current scope",
+    "state": "no duplicate turn, foreign mutation, retention without consent or resurrection",
+    "response": "agrees with persisted effect; no fabricated success"
+  },
+  "public_verification": {
+    "teacher_actions_do_not_count_as_participant_turns": true,
+    "operation_observation": "traces plus public API and database effects; no favorable replacement"
+  }
+}

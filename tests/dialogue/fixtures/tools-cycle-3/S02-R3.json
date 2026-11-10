@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "case_id": "S02-R3",
+  "family": "S02",
+  "partition": "holdout_cycle_3",
+  "seed": 9302,
+  "domain": "agua",
+  "mode": "oral_defense",
+  "effective_profile": "guided_controlled",
+  "material_versions": "fixture_published_v1",
+  "roles": [
+    "participant",
+    "teacher"
+  ],
+  "consent_scope": [
+    "transcript",
+    "summary"
+  ],
+  "initial_state": "isolated_empty_database",
+  "fault": null,
+  "fault_injected": false,
+  "steps": [
+    {
+      "actor": "participant",
+      "input": "¿Cómo hierve el agua, por favor",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Exprésalo de otra forma, por favor",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Necesito un ejemplo, por favor",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Compara los cambios de estado, por favor",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Repite la explicación, por favor",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Continuemos, por favor",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    }
+  ],
+  "expected_properties": {
+    "operations": [
+      "teaching_unit_resolve"
+    ],
+    "forbidden_operations": [
+      "publish_retired_unit"
+    ],
+    "role_scope": "participant owns session; teacher-only API requires authenticated teacher",
+    "arguments": "resolved fixture identifiers, exact version and current scope",
+    "state": "no duplicate turn, foreign mutation, retention without consent or resurrection",
+    "response": "agrees with persisted effect; no fabricated success"
+  },
+  "public_verification": {
+    "teacher_actions_do_not_count_as_participant_turns": true,
+    "operation_observation": "traces plus public API and database effects; no favorable replacement"
+  }
+}

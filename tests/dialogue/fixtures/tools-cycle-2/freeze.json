@@ -1,0 +1,14 @@
+{
+  "created_at_utc": "2026-10-19T13:40:09.569481+00:00",
+  "sha256": {
+    "S01-R2.json": "6adab94be0233eeba3668d25952f8a7fad02d3d773223d2c6c2a80101f8699be",
+    "S02-R2.json": "451183754b305b82ea50a5f7cb17a7b43eeb88fb0d010673e5f8250b130c6de1",
+    "S03-R2.json": "f7d47d8ca78f8b86020331f0281ef8e2ca7933c7b799d67058c78e8ebc618ab7",
+    "S04-R2.json": "69ea81af17a224fce6220f554a14ac7f6b0ecc7da57d7b490d0466b18c04a85c",
+    "S05-R2.json": "644ded5c81b465939edd99de81f25a7f25b3c4d771082095b1c9a7f2c4da8a34",
+    "S06-R2.json": "ebfff8bb9dcc0dd9243ed48d3434186b754db1aa7900dc75f690792fa07e95f2",
+    "S07-R2.json": "530ff8f4019d3851c92d0b8aac211e7649fa86d0b21bb81c9ce1897a46b3d1ff",
+    "S08-R2.json": "22978daeb235649a01d439820a7c3256c25775e07811f1f96acab24673270470"
+  },
+  "review": "New cross-domain combinations and formulations, same eight normative families; manual engineering review before first run. Original failures unchanged. Explicit narrative-to-public-operation mapping retained, not an autonomous tool-selection claim."
+}

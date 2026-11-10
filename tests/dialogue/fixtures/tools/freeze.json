@@ -1,0 +1,22 @@
+{
+  "sha256": {
+    "S01-D.json": "e94369228ce57698870b47be05d78dd283e0f45b7fd360c43de1d5c579ae6123",
+    "S01-H.json": "fadf2cb127f1f826167dc488f9205b9d62ec3fcfb5229acaf8cd1875423c9a98",
+    "S02-D.json": "3298f539c29b8d0d0abc4377f358765e2100da0211bd988bd21bd22c33fc3eb6",
+    "S02-H.json": "ed990cec62c511439aa82d86d5f614af8d58f8bebaa9d16d3f736ddaf7e13157",
+    "S03-D.json": "3ab8724f4ef423e425da97b8e95237f9b267299e12ed7711a9fdb13f76d94112",
+    "S03-H.json": "a6a9020db11c0af077f58a4d9e33ce557d7690e39d2f44daac93fa6d3780163c",
+    "S04-D.json": "250296db1559b8035690c537481d4e9c1f8a6c61a5a24b0431b84733c12074b3",
+    "S04-H.json": "0fc4f25d2a1e717dacc1ea25cf386f2796362ef49a2cf54ab6e1098ca32d92f0",
+    "S05-D.json": "6c7b2ca5da80bd9eb3ed019c37eaf4df4ec675641cab1282cd6a812babd0c6d1",
+    "S05-H.json": "e2ebf9091fbaf91123d91ccbb95edda443c98095e3dc66f33317c833c7cf4c9c",
+    "S06-D.json": "5e87d2fbdcbcc38f50154786f55cdd7e8b7d9ed22127c962047f40fd8d26072b",
+    "S06-H.json": "adb9edfba910f227fd182e7752c28d30d63abad6ea4330bd440e928f3d0a5855",
+    "S07-D.json": "db4f6436623404d76161d7f0476dfef28411639e3b4a109b0a2716f5b52410d2",
+    "S07-H.json": "b8d906231a4fef9ebc94c8b7426425dd0839f7197deb34fbb95a83f0e6703c9e",
+    "S08-D.json": "0ae93445f90145be45e6b52c8950d2910198f4a04bda19c4307f617c4ff4d526",
+    "S08-H.json": "7284455cfef5ead54c814196ff3f27e5b535f7d6b53aa64920e489aca61cddb1"
+  },
+  "review": "Engineering review of operations, roles, scopes and variants before runner; no human utility claim.",
+  "execution": "pending; declarative operation names must be mapped to observed public service operations, not synthesized results."
+}

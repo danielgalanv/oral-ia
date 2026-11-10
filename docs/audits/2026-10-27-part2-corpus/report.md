@@ -1,0 +1,62 @@
+# Parte 2 — corpus inicial y consulta documental I0/I1
+
+Fecha: 27-10-2026. Alcance autorizado por orden posterior al plan consolidado: exclusivamente preparar corpus real revisado, consultar procedencia y verificar arranque seguro. Se utilizaron las skills SpecKit implement/analyze/converge proporcionalmente, PDF para lectura/render y Presentations para inspección de PPTX. Sin delegación, mensajes, commits, instalaciones, modelos, inferencias o GPU.
+
+**Resultado:** paquete `materiales/docente/piloto-requisitos/paquete-v1`, versión efectiva `oralia-requisitos-20261027-v1.1`, cinco documentos originales/capturas con 43 páginas/pasajes técnicamente disponibles. Extensión de Materiales de la aplicación existente, seleccionada únicamente por el perfil documental local. Preparado para prueba del profesor; aceptación humana y piloto pendientes. Feature012, T077, T090/T150, G2 y SC001 permanecen abiertos/vigentes.
+
+## Trazabilidad del bloque
+
+| Tarea | Entrega y evidencia | Estado acotado |
+|---|---|---|
+| T087 | Originales docentes cotejados con inventario y copiados; NASA PDF/HTML y Sommerville PPTX descargados; manifiesto con URL/edición/condiciones/hash; equivalencias por contenido y formato | Completa para esta versión, con INCOSE no adquirida explícita |
+| T088 | Primeras extracciones preservadas; normalizaciones por columnas/tablas etiquetadas;43 unidades disponibles,454 en cuarentena; seis grupos de conceptos y discrepancias; renders y `qa/review.json` | Revisión técnica focal completa, no aceptación docente ni cobertura exhaustiva |
+| T089 | `oralia.documentary`, extensión de `Tecnica.tsx`, `demo.ps1 -Documentary`; sin SQL/Chroma/modelos, acceso local, lectura de originales y mapa de conceptos | Implementada y comprobada |
+| T091 | Ocho pruebas CPU; build/ESLint/Black/Ruff; dos arranques con PATH habitual, navegador real, PDF en página11, NASA PDF210/impresa200, cierre/reentrada y dos paradas verificadas | Verificada técnicamente; usuario aún no la ha probado |
+
+Se conservaron spec/plan/tasks anteriores en `before/`; solo se añadieron secciones y tareas del bloque. T090 no se reutilizó. Análisis previo: `analysis-before.md`; sin contradicción crítica dentro del incremento documental. Los bloqueos semánticos históricos siguen impidiendo tutoría generativa y no se reinterpretan como resueltos.
+
+## Fuentes, revisión y cobertura
+
+El [guion del paquete](../../../materiales/docente/piloto-requisitos/paquete-v1/LEEME.md) contiene distribución exacta, páginas, limitaciones y referencias de lectura. El manifiesto efectivo es `manifest-v1.1.json`; `manifest.json` y `manifest-initial.json` conservan las composiciones anteriores. La versión1.1 agrega el intento de adquisición de la Summary Sheet gratuita de INCOSE; no cambia las43 unidades disponibles. No se sobreescribió la primera extracción.
+
+Docentes: solo `5 - Requisitos.pdf` y `6 - Procedimiento requisitos.pdf` de la carpeta autorizada, sin descender a ejemplos/trabajos del alumnado. Hashes coincidentes con originales e inventario. PDF seleccionados frente a PPTX de la misma edición; comparación de contenido tras retirar pies/fecha/número explica diferencias de orden. 82/89 y14/14 pares superan0,9 de similitud; los siete restantes no se declaran idénticos y requieren QA, no eliminación automática. Las48 equivalencias candidatas docente/Sommerville conservan versiones y procedencia; no constituyen48 fuentes nuevas.
+
+NASA: manual oficial NASA/SP-2016-6105 Rev2, publicación NTRS17-02-2017, permiso público acreditado en NTRS20170001761. Solo C–E seleccionados y seis páginas revisadas. Texto original a dos columnas conservado y lectura normalizada por columna etiquetada. Hay continuaciones207→208,208→209 y209→210, advertidas en cada pasaje; no se fragmentaron para embeddings. D-1 PDF212 queda en cuarentena por tabla girada y E-1 PDF214 por celdas no revisadas. SWE-055 VerD se conserva como HTML inerte descargable; solo §4.1.7 literal está disponible. Las secciones amplias contienen iconos no resueltos/duplicación de listas anidadas y siguen en cuarentena. No se ejecuta su JavaScript ni se solicitan recursos externos desde el producto.
+
+Sommerville: sitio oficial SE10 → enlace explícito del autor a ZIP → únicamente `slides/Ch4 Req Eng.pptx` seleccionado como documento del corpus. El ZIP completo es contenedor de adquisición, no amplía la cobertura del capítulo4. El original88 diapositivas tiene fecha30-10-2014; doce contrastadas con renders producidos mediante PowerPoint instalado, abierto de solo lectura y cerrado por esta ejecución. La diapositiva60 contiene una imagen no extraída: cuarentena. No se descargaron soluciones/quizzes restringidos. Descarga docente ofrecida no se interpreta como licencia abierta o permiso de redistribución.
+
+INCOSE: [GtWR4](https://portal.incose.org/Web/iCore/Store/StoreLayouts/Item_Detail.aspx?Category=EBOOKS&iProductCode=GUIDEWRITEREQ), edición1-07-2023, se ofrece en tienda; [webinar168](https://www.incose.org/resource/webinar-168-guide-to-writing-requirements-version-4/) está etiquetado Members-Only. No se usó un PDF directo indexado para eludir esa condición. El [grupo oficial](https://www.incose.org/group/requirements-working-group/) también enlaza una Summary Sheet gratuita: [recurso concreto](https://www.incose.org/docs/default-source/working-groups/requirements-wg/guidetowritingrequirements/incose_rwg_gtwr_v4_summary_sheet.pdf), siete páginas, junio2023, distinto de la guía completa. Descarga local:403 tanto en esa URL como en redirección observada a wp-content/uploads/legacy; navegador: visor vacío. No hay original local, extracción incorporada ni comparación doctrinal de INCOSE. El fallo queda en `capturas/incose-summary-attempts.json`. No se hacen compras, login ni peticiones de acceso nuevas.
+
+Seis grupos con pasajes reales: necesidades, tipos/niveles, calidad/especificación/comprobabilidad, obtención/análisis, validación/verificación y gestión/cambio/trazabilidad. Los enlaces del mapa abren el documento y pasaje disponibles. INCOSE muestra cobertura vacía. Las diferencias entre fuentes están en el manifiesto: no se traducen ni resuelven por invención. Destaca la inversión aparente título/cuerpo de Procedimiento13–14, ambas en cuarentena.
+
+## Integración mínima y acceso
+
+Se extiende la vista existente de Materiales en `Tecnica.tsx`, sin ruta/panel de producto nuevo. El servidor documental solo expone la consulta, assets y originales referidos por ID. No crea cursos, actividades SQL, sesiones de participante o índices. La ruta habitual de Técnica y la demo permanecen disponibles con su composición anterior. El perfil nuevo se selecciona expresamente con `-Documentary`; no cambia silenciosamente una sesión activa.
+
+Acceso: botón local explícito emite permiso de lectura en memoria/cookie específica `oralia_documentary_teacher`, separada de cookies habituales. No autentica una identidad personal y no da privilegios al producto habitual; solo documentos autorizados a quien acceda desde este equipo. Host y Origin se validan con la comprobación local existente. Cookie HttpOnly/SameSiteStrict, sin conservación de búsquedas; salir revoca el token. Reiniciar requiere entrar otra vez; no es recuperación de una sesión participante. Una página ya mostrada o descargada no se puede retirar de la pantalla por revocar la consulta.
+
+Ruta original validada dentro del paquete, hashes de bytes/extracción/texto verificados al iniciar y conceptos rechazados si apuntan a pasajes no disponibles. HTML original se entrega como descarga, nunca ejecutado. CSP limita los recursos/conexiones del visor a self. No hay búsqueda web durante consultas, ranking semántico, simulación de relevancia o generación. T077/representación tokenizada sigue siendo el bloqueo preciso para una consulta vectorial nueva; se entrega consulta documental funcional sin ejecutar encoder ni tocar índices históricos.
+
+Launcher: `scripts/demo.ps1 -Documentary [-NoBrowser] [-DocumentaryPort 8022]` invoca directamente `.venv/Scripts/python.exe -X utf8 -m oralia.documentary`; no usa Node ni uv para arrancar ni modifica PATH. Necesita la web compilada, incluida y verificada en esta entrega. El arranque normal de autoestudio contiene una llamada real a embeddings; no se ejecutó y no se anuncia aprobado. La ruta full de la demo tampoco se acredita por este recorrido.
+
+## Verificación y primeros fallos
+
+| Comprobación | Resultado y evidencia |
+|---|---|
+| `pytest tests/unit/test_documentary_profile.py -q --basetemp=.scratch-part2/pytest-final` | 8 correctas; `pytest-final.log/json`. Acceso/Origin/Host, cierre/reentrada, prohibición de mutaciones/participantes, hash del PDF real, descarga inerte HTML, preview, integridad de originales/extracciones y rutas, proceso nuevo sin importar torch/transformers/sentence_transformers/chromadb. No acredita semántica o uso humano. |
+| `black --workers 1` archivos del incremento | Correcto, `black-final.log/json`; se formatearon los archivos nuevos. |
+| Ruff por identidad/multiplicidad en archivos nuevos | Cero incidencias finales: `ruff-verified.log/json`; primer resultado en `ruff-first.json`. Ningún archivo Python preexistente modificado; baseline de incidencias en archivos nuevos era vacío. No se rebajan incidencias ajenas. |
+| ESLint de Técnica antes/después por stdin con ruta real | 0→0 mensajes; `eslint-final.json`. Se conserva también la comprobación anterior al enlace de conceptos. |
+| TypeScript y Vite | `tsc -b apps/web` limpio; `vite build apps/web`,47 módulos,532ms. Comandos/hashes en `build-final.json`. Node existente del runtime usado explícitamente para compilar; no se presenta ese PATH como solución de arranque habitual. |
+| Launcher desde PATH Machine+User | Dos ejecuciones reales de `demo.ps1 -Documentary -NoBrowser`, puerto8022: procesos propios105844 y89140; `launcher-*-live.json`. Ambos arrancan sin modelos o CUDA. Puerto ocupado rechaza bind10048, sin matar/reutilizar servicios. |
+| Navegador real | Entrada, versión y cinco documentos; buscar Comprobable; página11 en visor PDF real; cuarentena; cerrar/volver a entrar. Tras reiniciar, versión1.1, mapa→NASA210/impresa200, cierre/reentrada. `browser-*.png/txt`. No se usa TestClient para afirmar experiencia de navegador. |
+| Parada propia | Ctrl+C sobre cada sesión de launcher; PID/creación ya no existe y bind8022 libre: `launcher-first-stop.json`, `launcher-second-stop.json`. No queda servidor documental activo al entregar. |
+| Preservación |1.965 archivos históricos cotejados sin cambios, incluidos evidencia Feature012, materiales anteriores y parte1. Originales docentes actuales iguales a las copias: `preservation.json`. No se reejecutó auditoría global. |
+
+Primer intento de pytest falló antes de pruebas: faltaba la carpeta padre `.scratch-part2` para `--basetemp`,8 errores de setup,0 aprobadas. Se creó esa carpeta propia y se repitió. Dos intentos de Black dentro del sandbox quedaron sin salida, interrumpidos; como en parte1, la ejecución fuera del sandbox permitió completar el formateador. Se autorizaron solo estas pruebas CPU/servidor local. Las ejecuciones inconclusas no cuentan como aprobadas. No se atribuye una causa exacta a los bloqueos de Black sin pila. La suite final conserva un aviso de deprecación Starlette/httpx; no se instalaron bibliotecas para ocultarlo. Un intento de selector Playwright para un summary no encontró rol button; se leyó el estado fresco y el mismo control se cerró por su índice accesible. No era un fallo del producto.
+
+## Convergencia y parada del alcance
+
+FR010/011/012/013/019 y SC003/004/005 se contrastan solo en su parte documental. T087/T088/T089/T091 tienen evidencia y pueden marcarse completas para este incremento. Sigue pendiente adquisición técnica del resumen INCOSE, más QA del material en cuarentena. Estas limitaciones están visibles, sin afirmar cobertura total. La orden autoriza entregar el resto cuando una familia no se pueda incorporar; no se pide al profesor que construya el corpus o redacte respuestas del tutor.
+
+No se detecta otro trabajo necesario para ofrecer esta consulta documental dentro del alcance. La aceptación docente es un estado distinto. T077 y las tareas semánticas históricas siguen abiertas; no se cierra Feature012 ni se activan T090/T150/G2/SC001 o participantes. No se modifican presupuestos, reserva o políticas de consentimiento. No se inicia el siguiente incremento. El guion del paquete es la única prueba sugerida al usuario, y no incluye funciones conocidas como rotas.

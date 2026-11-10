@@ -1,0 +1,67 @@
+{
+  "annotation": "AI-authored fresh engineering cases, frozen before correction of PH04; not human validation",
+  "cases": [
+    {
+      "case_id": "PJ01",
+      "partition": "reserved_cycle_2",
+      "domain": "agua",
+      "steps": [
+        "Buenos días",
+        "¿Qué significa la evaporación?",
+        "¿Cómo se evapora el agua?",
+        "Repite literalmente lo último"
+      ],
+      "expected": [
+        "greeting",
+        "definition",
+        "process",
+        "repeat"
+      ]
+    },
+    {
+      "case_id": "PJ02",
+      "partition": "reserved_cycle_2",
+      "domain": "agua",
+      "steps": [
+        "¿En qué condiciones hierve el agua?",
+        "¿Es posible convertirse en vapor sin hervir?",
+        "¿Por qué se condensa el vapor en un vaso frío?"
+      ],
+      "expected": [
+        "conditions",
+        "possibility",
+        "cause"
+      ]
+    },
+    {
+      "case_id": "PJ03",
+      "partition": "reserved_cycle_2",
+      "domain": "programa",
+      "steps": [
+        "¿Cómo comprueba el programa un registro antes de almacenarlo?",
+        "Explícalo con otras palabras",
+        "¿Qué significa validación?"
+      ],
+      "expected": [
+        "process",
+        "process_alternative",
+        "definition"
+      ]
+    },
+    {
+      "case_id": "PJ04",
+      "partition": "reserved_cycle_2",
+      "domain": "programa",
+      "steps": [
+        "¿Por qué se valida antes de guardar?",
+        "¿Puede guardarse un registro sin superar la validación?",
+        "Repite exactamente la última respuesta"
+      ],
+      "expected": [
+        "cause",
+        "possibility",
+        "repeat"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "case_id": "S02-D",
+  "family": "S02",
+  "partition": "development",
+  "seed": 8101,
+  "domain": "programa",
+  "mode": "self_study",
+  "effective_profile": "guided_controlled",
+  "material_versions": "fixture_published_v1",
+  "roles": [
+    "participant",
+    "teacher"
+  ],
+  "consent_scope": [
+    "transcript",
+    "summary"
+  ],
+  "initial_state": "isolated_empty_database",
+  "fault": "unit_retired",
+  "fault_injected": false,
+  "steps": [
+    {
+      "actor": "participant",
+      "input": "Quiero una explicación",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Dame otro ejemplo",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "¿Y si el docente lo retira?",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Repite ese ejemplo",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "¿Qué contenido sigue vigente?",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    },
+    {
+      "actor": "participant",
+      "input": "Elijo el tema disponible",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit"
+    }
+  ],
+  "expected_properties": {
+    "operations": [
+      "teaching_unit_resolve"
+    ],
+    "forbidden_operations": [
+      "publish_retired_unit"
+    ],
+    "role_scope": "participant owns session; teacher-only API requires authenticated teacher",
+    "arguments": "resolved fixture identifiers, exact version and current scope",
+    "state": "no duplicate turn, foreign mutation, retention without consent or resurrection",
+    "response": "agrees with persisted effect; no fabricated success"
+  },
+  "public_verification": {
+    "teacher_actions_do_not_count_as_participant_turns": true,
+    "operation_observation": "traces plus public API and database effects; no favorable replacement"
+  }
+}

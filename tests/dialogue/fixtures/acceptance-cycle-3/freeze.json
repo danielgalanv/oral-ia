@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-19T13:37:07.198108+00:00",
+  "sha256": {
+    "inputs.json": "997d65f3fe754d1b7a449b9d69c4b9dd7c898ca81ff7ee42e1755b9829a244b4",
+    "dialogues.json": "a76875ee7f2609c3680397d080956b4a8fd6061da1b6dd9abf57bf1ec076f8b7"
+  },
+  "prior_passes_reused": false,
+  "review": "Synthetic engineering annotation by implementer; not independent human or utility validation. Freeze before first execution; preserve all failures.",
+  "scope": "48 new act classifications, 36 critical; public authorization separate; 12 fresh conversational combinations."
+}

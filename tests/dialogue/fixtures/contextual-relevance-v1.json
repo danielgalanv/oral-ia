@@ -1,0 +1,262 @@
+{
+  "cases": [
+    {
+      "id": "DEV-W",
+      "partition": "development",
+      "stream": "agua-docx",
+      "steps": [
+        {
+          "text": "¿El agua puede convertirse en vapor aunque no esté hirviendo?",
+          "topic": "evaporacion",
+          "suffix": "possibility"
+        },
+        {
+          "text": "¿Evaporarse es desaparecer?",
+          "topic": "evaporacion"
+        },
+        {
+          "text": "¿Por qué sale del líquido?",
+          "topic": "evaporacion",
+          "suffix": "cause"
+        },
+        {
+          "text": "¿Se rompe el agua en hidrógeno y oxígeno?",
+          "topic": "evaporacion",
+          "suffix": "molecular-fact"
+        },
+        {
+          "text": "Sigo sin verlo. Explícamelo de otra manera.",
+          "topic": "evaporacion"
+        },
+        {
+          "text": "¿Y cómo pasa, en orden?",
+          "topic": "evaporacion",
+          "suffix": "process",
+          "not_contains": [
+            "superficie fría",
+            "condensación"
+          ]
+        }
+      ],
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Lo confirmo."
+    },
+    {
+      "id": "DEV-P",
+      "partition": "development",
+      "stream": "programa-docx",
+      "steps": [
+        {
+          "text": "¿Qué es validar exactamente?",
+          "topic": "validacion",
+          "suffix": "functional-definition"
+        },
+        {
+          "text": "¿Y mil? También son dígitos.",
+          "topic": "validacion",
+          "suffix": "example-2"
+        },
+        {
+          "text": "Entonces tres coma cinco pasa, porque es más pequeño que mil.",
+          "topic": "validacion",
+          "suffix": "decimal-fact"
+        },
+        {
+          "text": "Me lío. Dime los pasos con ese último número.",
+          "topic": "validacion",
+          "suffix": "decimal-process"
+        }
+      ],
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Lo confirmo."
+    },
+    {
+      "id": "DEV-D",
+      "partition": "development",
+      "stream": "datos-pdf",
+      "steps": [
+        {
+          "text": "Hola. No tengo la tabla delante. ¿Me puedes decir los números?",
+          "topic": "media",
+          "suffix": "definition",
+          "contains": [
+            "Hola.",
+            "dos, tres, tres, cuatro y dieciocho"
+          ]
+        },
+        {
+          "text": "Quiero la media. ¿Qué es?",
+          "topic": "media",
+          "suffix": "definition"
+        },
+        {
+          "text": "A mí me sale treinta entre seis, cinco.",
+          "topic": "media",
+          "suffix": "causal-count"
+        }
+      ],
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Lo confirmo."
+    },
+    {
+      "id": "RES-W",
+      "partition": "reserved",
+      "stream": "agua-docx",
+      "steps": [
+        {
+          "text": "Hola, ¿puede secarse la tela sin hervir el agua?",
+          "topic": "evaporacion",
+          "suffix": "possibility"
+        },
+        {
+          "text": "¿Cómo ocurre ese proceso, paso a paso?",
+          "topic": "evaporacion",
+          "suffix": "process"
+        }
+      ],
+      "closure": "De acuerdo. Finaliza la sesión sin guardar esta conversación.",
+      "confirmation": "Lo confirmo."
+    },
+    {
+      "id": "RES-P",
+      "partition": "reserved",
+      "stream": "programa-docx",
+      "steps": [
+        {
+          "text": "Buenas, ¿qué es validar?",
+          "topic": "validacion",
+          "suffix": "functional-definition"
+        },
+        {
+          "text": "La cantidad 7,25 sería aceptable si es inferior a 1000.",
+          "topic": "validacion",
+          "suffix": "decimal-fact"
+        },
+        {
+          "text": "¿Cómo se comprueba ese valor en orden?",
+          "topic": "validacion",
+          "suffix": "decimal-process"
+        }
+      ],
+      "closure": "De acuerdo. Finaliza la sesión sin guardar esta conversación.",
+      "confirmation": "Lo confirmo."
+    },
+    {
+      "id": "RES-D",
+      "partition": "reserved",
+      "stream": "datos-pdf",
+      "steps": [
+        {
+          "text": "Buenos días. Léeme los valores de la serie A.",
+          "topic": "media",
+          "suffix": "definition"
+        },
+        {
+          "text": "Me da treinta dividido entre seis intentos.",
+          "topic": "media",
+          "suffix": "causal-count"
+        }
+      ],
+      "closure": "De acuerdo. Finaliza la sesión sin guardar esta conversación.",
+      "confirmation": "Lo confirmo."
+    },
+    {
+      "id": "DEV-O-evaporacion",
+      "partition": "development",
+      "stream": "agua-docx",
+      "mode": "oral_defense",
+      "topic": "evaporacion",
+      "answers": [
+        "Solo veo que la tela pierde agua al secarse.",
+        "Estoy pensando en que sigue siendo la misma sustancia.",
+        "La tela queda menos húmeda sin llevarla a ebullición.",
+        "Relaciono la observación con el paso del líquido al aire."
+      ],
+      "steps": [],
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Lo confirmo."
+    },
+    {
+      "id": "DEV-O-validacion",
+      "partition": "development",
+      "stream": "programa-docx",
+      "mode": "oral_defense",
+      "topic": "validacion",
+      "answers": [
+        "La cantidad se guarda si todos los caracteres son números.",
+        "Me refiero a comprobar las reglas antes de guardar el registro.",
+        "Justifico la regla del caso antes de solicitar escritura.",
+        "Distingo comprobar los caracteres y comprobar el intervalo."
+      ],
+      "steps": [],
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Lo confirmo."
+    },
+    {
+      "id": "DEV-O-media",
+      "partition": "development",
+      "stream": "datos-pdf",
+      "mode": "oral_defense",
+      "topic": "media",
+      "answers": [
+        "Divido la suma entre todos los intentos realizados.",
+        "Cuento solo las duraciones que he podido medir.",
+        "El intento sin duración no es una medición de cero.",
+        "Conecto el número de observaciones válidas con el divisor."
+      ],
+      "steps": [],
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Lo confirmo."
+    },
+    {
+      "id": "RES-O-evaporacion",
+      "partition": "reserved",
+      "stream": "agua-docx",
+      "mode": "oral_defense",
+      "topic": "evaporacion",
+      "answers": [
+        "Solo veo que la tela pierde agua al secarse.",
+        "Estoy pensando en que sigue siendo la misma sustancia.",
+        "La tela queda menos húmeda sin llevarla a ebullición.",
+        "Relaciono la observación con el paso del líquido al aire."
+      ],
+      "steps": [],
+      "closure": "De acuerdo. Finaliza la sesión sin guardar esta conversación.",
+      "confirmation": "Lo confirmo."
+    },
+    {
+      "id": "RES-O-validacion",
+      "partition": "reserved",
+      "stream": "programa-docx",
+      "mode": "oral_defense",
+      "topic": "validacion",
+      "answers": [
+        "La cantidad se guarda si todos los caracteres son números.",
+        "Me refiero a comprobar las reglas antes de guardar el registro.",
+        "Justifico la regla del caso antes de solicitar escritura.",
+        "Distingo comprobar los caracteres y comprobar el intervalo."
+      ],
+      "steps": [],
+      "closure": "De acuerdo. Finaliza la sesión sin guardar esta conversación.",
+      "confirmation": "Lo confirmo."
+    },
+    {
+      "id": "RES-O-media",
+      "partition": "reserved",
+      "stream": "datos-pdf",
+      "mode": "oral_defense",
+      "topic": "media",
+      "answers": [
+        "Divido la suma entre todos los intentos realizados.",
+        "Cuento solo las duraciones que he podido medir.",
+        "El intento sin duración no es una medición de cero.",
+        "Conecto el número de observaciones válidas con el divisor."
+      ],
+      "steps": [],
+      "closure": "De acuerdo. Finaliza la sesión sin guardar esta conversación.",
+      "confirmation": "Lo confirmo."
+    }
+  ],
+  "human_review": "pending",
+  "synthetic": true
+}

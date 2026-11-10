@@ -1,0 +1,196 @@
+{
+  "cases": [
+    {
+      "id": "H3-W",
+      "partition": "reserved",
+      "stream": "agua-docx",
+      "steps": [
+        {
+          "text": "Hola. ¿Puede secarse una tela sin alcanzar la ebullición del agua?",
+          "topic": "evaporacion",
+          "suffix": "possibility"
+        },
+        {
+          "text": "¿A qué se debe que salga por la superficie?",
+          "topic": "evaporacion",
+          "suffix": "cause"
+        },
+        {
+          "text": "¿Cambia la sustancia al separarse hidrógeno y oxígeno?",
+          "topic": "evaporacion",
+          "suffix": "molecular-fact"
+        },
+        {
+          "text": "Necesito otra explicación de ese cambio de estado.",
+          "topic": "evaporacion"
+        },
+        {
+          "text": "¿Cómo ocurre eso en orden?",
+          "topic": "evaporacion",
+          "suffix": "process"
+        }
+      ],
+      "retained": false,
+      "closure": "Quiero cerrar la sesión sin conservar nada.",
+      "confirmation": "Confirmo el cierre."
+    },
+    {
+      "id": "H3-P",
+      "partition": "reserved",
+      "stream": "programa-docx",
+      "steps": [
+        {
+          "text": "Hola. ¿Poder ingresar una cantidad significa que se admite?",
+          "topic": "validacion",
+          "suffix": "acceptance-boundary"
+        },
+        {
+          "text": "¿Qué es validar la entrada recibida?",
+          "topic": "validacion",
+          "suffix": "functional-definition"
+        },
+        {
+          "text": "¿Por qué comprobarla antes de pedir guardar?",
+          "topic": "validacion",
+          "suffix": "causal-order"
+        },
+        {
+          "text": "El texto 5,25 sería válido por quedar por debajo de mil.",
+          "topic": "validacion",
+          "suffix": "decimal-fact"
+        },
+        {
+          "text": "¿Cómo compruebo ese valor paso a paso?",
+          "topic": "validacion",
+          "suffix": "decimal-process"
+        },
+        {
+          "text": "Si el dato cumple las reglas, ¿puedo anunciar guardado confirmado?",
+          "topic": "validacion",
+          "suffix": "storage-boundary"
+        },
+        {
+          "text": "Distingo el registro aceptable del resultado de haberlo guardado.",
+          "topic": "validacion",
+          "suffix": "storage-failure"
+        },
+        {
+          "text": "Ante un error del fichero no confirmaría que quedó guardado.",
+          "topic": "validacion",
+          "suffix": "storage-report-process"
+        }
+      ],
+      "retained": true,
+      "closure": "Quiero cerrar la sesión sin conservar nada.",
+      "confirmation": "Confirmo."
+    },
+    {
+      "id": "H3-D",
+      "partition": "reserved",
+      "stream": "datos-pdf",
+      "steps": [
+        {
+          "text": "Buenos días. ¿Me puedes decir las duraciones de la serie A?",
+          "topic": "media",
+          "suffix": "definition"
+        },
+        {
+          "text": "¿Qué es la media de esa serie?",
+          "topic": "media",
+          "suffix": "definition"
+        },
+        {
+          "text": "Repartí treinta entre seis intentos.",
+          "topic": "media",
+          "suffix": "causal-count"
+        },
+        {
+          "text": "¿Por qué sustituir por cero la duración desconocida?",
+          "topic": "media",
+          "suffix": "missing-zero-cause"
+        },
+        {
+          "text": "No lo veo. Dame otra forma de explicarlo.",
+          "topic": "media",
+          "suffix": "missing-zero-alternative"
+        },
+        {
+          "text": "¿Cómo lo expongo paso a paso?",
+          "topic": "media",
+          "suffix": "missing-zero-process"
+        },
+        {
+          "text": "¿Y la mediana vale seis segundos?",
+          "topic": "mediana",
+          "suffix": "definition"
+        },
+        {
+          "text": "¿A qué se deben las diferencias entre esas medidas?",
+          "topic": "mediana",
+          "suffix": "comparison"
+        },
+        {
+          "text": "¿Cómo expongo la comparación de las series A y B en orden?",
+          "topic": "interpretacion",
+          "suffix": "process"
+        }
+      ],
+      "retained": false,
+      "closure": "Quiero cerrar la sesión sin conservar nada.",
+      "confirmation": "Confirmo el cierre."
+    },
+    {
+      "id": "H3-O-evaporacion",
+      "partition": "reserved",
+      "stream": "agua-docx",
+      "mode": "oral_defense",
+      "topic": "evaporacion",
+      "answers": [
+        "He observado que la ropa se queda menos mojada.",
+        "Estoy describiendo un cambio de estado de la misma sustancia.",
+        "La observación no demuestra que haya habido ebullición.",
+        "Relaciono lo observado con la salida por la superficie."
+      ],
+      "steps": [],
+      "retained": false,
+      "closure": "Quiero cerrar la sesión sin conservar nada.",
+      "confirmation": "Confirmo."
+    },
+    {
+      "id": "H3-O-validacion",
+      "partition": "reserved",
+      "stream": "programa-docx",
+      "mode": "oral_defense",
+      "topic": "validacion",
+      "answers": [
+        "Con recibir el registro yo diría que ya está guardado.",
+        "Comprobaría sus reglas antes de solicitar el guardado.",
+        "Justifico las condiciones antes de pedir la escritura.",
+        "Distingo el contenido aceptado de la operación pendiente."
+      ],
+      "steps": [],
+      "retained": false,
+      "closure": "Quiero cerrar la sesión sin conservar nada.",
+      "confirmation": "Confirmo."
+    },
+    {
+      "id": "H3-O-media",
+      "partition": "reserved",
+      "stream": "datos-pdf",
+      "mode": "oral_defense",
+      "topic": "media",
+      "answers": [
+        "Había usado todos los intentos para dividir el total.",
+        "Solo cuento los valores cuya duración conozco.",
+        "Una casilla sin tiempo no es una medida de cero.",
+        "Relaciono las observaciones disponibles con ese divisor."
+      ],
+      "steps": [],
+      "retained": false,
+      "closure": "Quiero cerrar la sesión sin conservar nada.",
+      "confirmation": "Confirmo."
+    }
+  ],
+  "synthetic": true,
+  "human_review": "pending"
+}

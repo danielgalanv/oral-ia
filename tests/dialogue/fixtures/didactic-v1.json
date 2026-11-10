@@ -1,0 +1,131 @@
+{
+  "annotation": "AI-authored engineering cases, not human independent validation",
+  "cases": [
+    {
+      "case_id": "PD01",
+      "partition": "development",
+      "domain": "agua",
+      "steps": [
+        "hola",
+        "dime que sabes sobre el agua?",
+        "¿A qué temperatura hierve el agua?",
+        "el agua puede pasar a ser vapor en algun momento?",
+        "dimelo",
+        "el agua puede pasar a ser vapor en algun momento?",
+        "¿Cómo pasa el agua líquida a vapor?"
+      ],
+      "expected": [
+        "greeting",
+        "overview",
+        "conditions",
+        "possibility",
+        "repeat",
+        "possibility_alternative",
+        "process"
+      ]
+    },
+    {
+      "case_id": "PD02",
+      "partition": "development",
+      "domain": "agua",
+      "steps": [
+        "Explícame paso a paso la condensación",
+        "no lo entiendo",
+        "repite exactamente la última respuesta"
+      ],
+      "expected": [
+        "process",
+        "process_alternative",
+        "repeat"
+      ]
+    },
+    {
+      "case_id": "PD03",
+      "partition": "development",
+      "domain": "programa",
+      "steps": [
+        "¿Cómo valida el programa un registro?",
+        "¿Por qué se valida antes de guardar?",
+        "repite exactamente la última respuesta"
+      ],
+      "expected": [
+        "process",
+        "cause",
+        "repeat"
+      ]
+    },
+    {
+      "case_id": "PD04",
+      "partition": "development",
+      "domain": "programa",
+      "steps": [
+        "¿Puede guardarse un registro sin validarlo?",
+        "no quiero un ejemplo; explica por qué hay validación"
+      ],
+      "expected": [
+        "possibility",
+        "cause"
+      ]
+    },
+    {
+      "case_id": "PH01",
+      "partition": "reserved",
+      "domain": "agua",
+      "steps": [
+        "Buenas tardes",
+        "¿Podría el agua convertirse en vapor sin llegar a hervir?",
+        "Sigo sin comprender cómo pasa a vapor; guíame en pasos"
+      ],
+      "expected": [
+        "greeting",
+        "possibility",
+        "process"
+      ]
+    },
+    {
+      "case_id": "PH02",
+      "partition": "reserved",
+      "domain": "agua",
+      "steps": [
+        "¿Por qué aparecen gotas en un vaso frío?",
+        "No me queda claro, explícalo de otra manera",
+        "¿Cómo se llama ese cambio?"
+      ],
+      "expected": [
+        "cause",
+        "cause_alternative",
+        "definition"
+      ]
+    },
+    {
+      "case_id": "PH03",
+      "partition": "reserved",
+      "domain": "programa",
+      "steps": [
+        "Describe el proceso para comprobar un registro antes de almacenarlo",
+        "No he comprendido los pasos, explícalos de otra forma",
+        "Repite literalmente lo último"
+      ],
+      "expected": [
+        "process",
+        "process_alternative",
+        "repeat"
+      ]
+    },
+    {
+      "case_id": "PH04",
+      "partition": "reserved",
+      "domain": "programa",
+      "steps": [
+        "¿Es posible almacenar datos que no superan la validación?",
+        "¿Cómo se llama la comprobación anterior al almacenamiento?",
+        "No expliques cómo funciona; solo dime qué es la validación"
+      ],
+      "expected": [
+        "possibility",
+        "definition",
+        "definition"
+      ]
+    }
+  ]
+}

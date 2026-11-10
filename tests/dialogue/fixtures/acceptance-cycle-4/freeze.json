@@ -1,0 +1,10 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-19T13:41:18.335887+00:00",
+  "sha256": {
+    "inputs.json": "64c01d05d5befcc118faaa58f196d471d1b61298d323f1f4b8f788299cc08970",
+    "dialogues.json": "630f6e3cbf7d9ee78bcdd5b1d868f33abb6c68a0706643a9ab6c0f2bf6cbc972"
+  },
+  "review": "Synthetic engineering annotation by implementer; no independent human/utility validation. Includes new combinations and normal Spanish variants; frozen before first execution. All failures retained.",
+  "prior_passes_reused": false
+}

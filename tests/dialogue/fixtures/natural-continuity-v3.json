@@ -1,0 +1,149 @@
+{
+  "annotation": "New third reserve before atomic explanation/functional definition/clarification repair. Earlier3/6and6/6first executions remain historical; no human authorship/approval inferred.",
+  "cases": [
+    {
+      "case_id": "reserved_third-agua-docx-self_study",
+      "partition": "reserved_third",
+      "stream": "agua-docx",
+      "mode": "self_study",
+      "topic": "evaporacion",
+      "academic_inputs": [
+        "Buenas tardes, ¿por qué sale agua de una tela mojada al aire?",
+        "¿Eso implica que se separan el hidrógeno y el oxígeno?",
+        "Sigo sin verlo; dame otra forma de explicarlo.",
+        "¿Cómo sucede ese cambio paso a paso?",
+        "¿Puede producirse vapor sin hervir?"
+      ],
+      "opening": null,
+      "closure_request": "Terminar la sesión sin guardar esta conversación.",
+      "closure_confirmation": "Confirmo finalizar sin conservarlos.",
+      "source_request": "¿De dónde procede esa explicación?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "reserved_third-agua-docx-oral_defense",
+      "partition": "reserved_third",
+      "stream": "agua-docx",
+      "mode": "oral_defense",
+      "topic": "evaporacion",
+      "academic_inputs": [
+        "Estoy suponiendo que el vapor es otra sustancia.",
+        "Ahora hablo del estado: el agua sigue siendo la misma sustancia.",
+        "Dame una pista para organizar la justificación."
+      ],
+      "opening": "Buenas tardes, quiero empezar con una pregunta de defensa.",
+      "closure_request": "Terminar la sesión sin guardar esta conversación.",
+      "closure_confirmation": "Confirmo finalizar sin conservarlos.",
+      "source_request": "¿De dónde procede esa pregunta?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "reserved_third-programa-docx-self_study",
+      "partition": "reserved_third",
+      "stream": "programa-docx",
+      "mode": "self_study",
+      "topic": "validacion",
+      "academic_inputs": [
+        "Hola, ¿qué significa validar en este programa?",
+        "¿Para qué comprobar una cantidad antes de pedir guardarla?",
+        "Si introduzco 007, ¿qué se comprueba?",
+        "¿Se admite el valor 1000?",
+        "¿Qué ocurre con ese último valor?"
+      ],
+      "opening": null,
+      "closure_request": "Terminar la sesión sin guardar esta conversación.",
+      "closure_confirmation": "Confirmo finalizar sin conservarlos.",
+      "source_request": "¿De dónde procede esa explicación?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "reserved_third-programa-docx-oral_defense",
+      "partition": "reserved_third",
+      "stream": "programa-docx",
+      "mode": "oral_defense",
+      "topic": "validacion",
+      "academic_inputs": [
+        "Pienso que basta con convertir el texto para pedir que se guarde.",
+        "Mi rectificación distingue el formato de la condición del rango.",
+        "Dame una pista para organizar la justificación."
+      ],
+      "opening": "Buenas tardes, quiero empezar con una pregunta de defensa.",
+      "closure_request": "Terminar la sesión sin guardar esta conversación.",
+      "closure_confirmation": "Confirmo finalizar sin conservarlos.",
+      "source_request": "¿De dónde procede esa pregunta?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "reserved_third-datos-pdf-self_study",
+      "partition": "reserved_third",
+      "stream": "datos-pdf",
+      "mode": "self_study",
+      "topic": "media",
+      "academic_inputs": [
+        "Buenas tardes, lee los valores de la serie A.",
+        "¿Para calcular la media dividimos treinta entre seis intentos?",
+        "¿Qué pasa con el intento sin una duración?",
+        "¿Cómo se calcula la media paso a paso?",
+        "¿Qué significa mediana?"
+      ],
+      "opening": null,
+      "closure_request": "Terminar la sesión sin guardar esta conversación.",
+      "closure_confirmation": "Confirmo finalizar sin conservarlos.",
+      "source_request": "¿De dónde procede esa explicación?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "reserved_third-datos-pdf-oral_defense",
+      "partition": "reserved_third",
+      "stream": "datos-pdf",
+      "mode": "oral_defense",
+      "topic": "media",
+      "academic_inputs": [
+        "Mi propuesta cuenta también el intento que no tiene una duración.",
+        "Quería distinguir los intentos de las cinco medidas disponibles.",
+        "Dame una pista para organizar la justificación."
+      ],
+      "opening": "Buenas tardes, quiero empezar con una pregunta de defensa.",
+      "closure_request": "Terminar la sesión sin guardar esta conversación.",
+      "closure_confirmation": "Confirmo finalizar sin conservarlos.",
+      "source_request": "¿De dónde procede esa pregunta?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    }
+  ]
+}

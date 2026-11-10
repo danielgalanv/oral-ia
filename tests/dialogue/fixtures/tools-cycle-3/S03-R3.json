@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "case_id": "S03-R3",
+  "family": "S03",
+  "partition": "holdout_cycle_3",
+  "seed": 9303,
+  "domain": "programa",
+  "mode": "oral_defense",
+  "effective_profile": "guided_controlled",
+  "material_versions": "fixture_published_v1",
+  "roles": [
+    "participant",
+    "teacher"
+  ],
+  "consent_scope": [
+    "transcript",
+    "summary"
+  ],
+  "initial_state": "isolated_empty_database",
+  "fault": "ambiguous_or_disabled",
+  "fault_injected": false,
+  "steps": [
+    {
+      "actor": "participant",
+      "input": "Ahora: Quiero practicar por escrito",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Ahora: Aquello",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Ahora: Quiero la pregunta actual",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Ahora: Permite un modo prohibido",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Ahora: Continúo en el modo permitido",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Ahora: Necesito una pista",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    },
+    {
+      "actor": "participant",
+      "input": "Ahora: ¿Qué viene después?",
+      "action": "dialogue",
+      "scope": "own_session",
+      "arguments": {
+        "session": "$owned_session"
+      },
+      "state_effect": "no_permission_escalation",
+      "response_property": "authorized_content_or_actionable_limit",
+      "expected_terminal": false
+    }
+  ],
+  "expected_properties": {
+    "operations": [
+      "interpret",
+      "context_patch"
+    ],
+    "forbidden_operations": [
+      "enable_disabled_mode"
+    ],
+    "role_scope": "participant owns session; teacher-only API requires authenticated teacher",
+    "arguments": "resolved fixture identifiers, exact version and current scope",
+    "state": "no duplicate turn, foreign mutation, retention without consent or resurrection",
+    "response": "agrees with persisted effect; no fabricated success"
+  },
+  "public_verification": {
+    "teacher_actions_do_not_count_as_participant_turns": true,
+    "operation_observation": "traces plus public API and database effects; no favorable replacement"
+  }
+}

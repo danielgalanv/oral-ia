@@ -1,0 +1,653 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "case_id": "V-H01",
+      "partition": "holdout_cycle_4",
+      "domain": "agua",
+      "mode": "self_study",
+      "study_mode": "doubt_resolution",
+      "effective_profile": "guided_controlled",
+      "seed": 4001,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "¿Qué diferencia hay entre ebullición y evaporación?"
+        },
+        {
+          "actor": "participant",
+          "text": "elijo evaporación"
+        },
+        {
+          "actor": "participant",
+          "text": "Un ejemplo, por favor"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la explicación"
+        },
+        {
+          "actor": "participant",
+          "text": "Necesito una comparación"
+        },
+        {
+          "actor": "participant",
+          "text": "Necesito una pista"
+        },
+        {
+          "actor": "participant",
+          "text": "Dilo de otra manera"
+        },
+        {
+          "actor": "participant",
+          "text": "Concluir"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "V-H02",
+      "partition": "holdout_cycle_4",
+      "domain": "agua",
+      "mode": "self_study",
+      "study_mode": "guided_explanation",
+      "effective_profile": "guided_controlled",
+      "seed": 4002,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "Quiero una explicación guiada sobre condensación"
+        },
+        {
+          "actor": "participant",
+          "text": "Continúa"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Qué viene después?"
+        },
+        {
+          "actor": "participant",
+          "text": "Dímelo"
+        },
+        {
+          "actor": "participant",
+          "text": "Un indicio"
+        },
+        {
+          "actor": "participant",
+          "text": "Otra forma"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta"
+        },
+        {
+          "actor": "participant",
+          "text": "Quiero terminar"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "V-H03",
+      "partition": "holdout_cycle_4",
+      "domain": "agua",
+      "mode": "self_study",
+      "study_mode": "presentation_preparation",
+      "effective_profile": "guided_controlled",
+      "seed": 4003,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "Quiero preparar mi exposición sobre congelación"
+        },
+        {
+          "actor": "participant",
+          "text": "Un ejemplo concreto"
+        },
+        {
+          "actor": "participant",
+          "text": "Una comparación, por favor"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite eso"
+        },
+        {
+          "actor": "participant",
+          "text": "Otra forma"
+        },
+        {
+          "actor": "participant",
+          "text": "Necesito una orientación"
+        },
+        {
+          "actor": "participant",
+          "text": "Quiero cambiar de tema"
+        },
+        {
+          "actor": "participant",
+          "text": "confirmo: presión"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "V-H04",
+      "partition": "holdout_cycle_4",
+      "domain": "programa",
+      "mode": "self_study",
+      "study_mode": "practice_questions",
+      "effective_profile": "guided_controlled",
+      "seed": 4004,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "Preguntas de práctica sobre entrada"
+        },
+        {
+          "actor": "participant",
+          "text": "El registro no contiene el campo requerido"
+        },
+        {
+          "actor": "participant",
+          "text": "Necesito una orientación"
+        },
+        {
+          "actor": "participant",
+          "text": "Un indicio"
+        },
+        {
+          "actor": "participant",
+          "text": "Otra pista"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta"
+        },
+        {
+          "actor": "participant",
+          "text": "Dilo de otra forma"
+        },
+        {
+          "actor": "participant",
+          "text": "Finalizar"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "V-H05",
+      "partition": "holdout_cycle_4",
+      "domain": "programa",
+      "mode": "self_study",
+      "study_mode": "concept_review",
+      "effective_profile": "guided_controlled",
+      "seed": 4005,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "Quiero repasar validación"
+        },
+        {
+          "actor": "participant",
+          "text": "Una pista, por favor"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta"
+        },
+        {
+          "actor": "participant",
+          "text": "Otra pista"
+        },
+        {
+          "actor": "participant",
+          "text": "Dilo de otra manera"
+        },
+        {
+          "actor": "participant",
+          "text": "Quiero cambiar de tema"
+        },
+        {
+          "actor": "participant",
+          "text": "confirmo: salida"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta actual"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "V-H06",
+      "partition": "holdout_cycle_4",
+      "domain": "programa",
+      "mode": "self_study",
+      "study_mode": "doubt_resolution",
+      "effective_profile": "guided_controlled",
+      "seed": 4006,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "¿Qué comprueba almacenamiento?"
+        },
+        {
+          "actor": "participant",
+          "text": "Un caso concreto"
+        },
+        {
+          "actor": "participant",
+          "text": "Una comparación de responsabilidades"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la comparación"
+        },
+        {
+          "actor": "participant",
+          "text": "Dilo de otra forma"
+        },
+        {
+          "actor": "participant",
+          "text": "Necesito una orientación"
+        },
+        {
+          "actor": "participant",
+          "text": "Cambiar de tema"
+        },
+        {
+          "actor": "participant",
+          "text": "confirmo: entrada"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "V-H07",
+      "partition": "holdout_cycle_4",
+      "domain": "agua",
+      "mode": "oral_defense",
+      "effective_profile": "guided_controlled",
+      "seed": 4007,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "99 grados Celsius a presión atmosférica"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta actual"
+        },
+        {
+          "actor": "participant",
+          "text": "Necesito que me orientes"
+        },
+        {
+          "actor": "participant",
+          "text": "Dilo de otra manera"
+        },
+        {
+          "actor": "participant",
+          "text": "Otra pista, por favor"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Qué viene después?"
+        },
+        {
+          "actor": "participant",
+          "text": "Hablemos de otra cosa"
+        },
+        {
+          "actor": "participant",
+          "text": "confirmo: congelación"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ],
+      "study_mode": "doubt_resolution"
+    },
+    {
+      "case_id": "V-H08",
+      "partition": "holdout_cycle_4",
+      "domain": "agua",
+      "mode": "oral_defense",
+      "effective_profile": "guided_controlled",
+      "seed": 4008,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "La presión afecta a la temperatura"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta actual"
+        },
+        {
+          "actor": "participant",
+          "text": "Necesito que me orientes"
+        },
+        {
+          "actor": "participant",
+          "text": "Dilo de otra manera"
+        },
+        {
+          "actor": "participant",
+          "text": "Otra pista, por favor"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Qué viene después?"
+        },
+        {
+          "actor": "participant",
+          "text": "Hablemos de otra cosa"
+        },
+        {
+          "actor": "participant",
+          "text": "confirmo: congelación"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ],
+      "study_mode": "doubt_resolution"
+    },
+    {
+      "case_id": "V-H09",
+      "partition": "holdout_cycle_4",
+      "domain": "agua",
+      "mode": "oral_defense",
+      "effective_profile": "guided_controlled",
+      "seed": 4009,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "100 grados Fahrenheit aproximadamente"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta actual"
+        },
+        {
+          "actor": "participant",
+          "text": "Necesito que me orientes"
+        },
+        {
+          "actor": "participant",
+          "text": "Dilo de otra manera"
+        },
+        {
+          "actor": "participant",
+          "text": "Otra pista, por favor"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Qué viene después?"
+        },
+        {
+          "actor": "participant",
+          "text": "Hablemos de otra cosa"
+        },
+        {
+          "actor": "participant",
+          "text": "confirmo: congelación"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ],
+      "study_mode": "doubt_resolution"
+    },
+    {
+      "case_id": "V-H10",
+      "partition": "holdout_cycle_4",
+      "domain": "programa",
+      "mode": "oral_defense",
+      "effective_profile": "guided_controlled",
+      "seed": 4010,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "La persistencia valida los campos"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta actual"
+        },
+        {
+          "actor": "participant",
+          "text": "Necesito que me orientes"
+        },
+        {
+          "actor": "participant",
+          "text": "Dilo de otra manera"
+        },
+        {
+          "actor": "participant",
+          "text": "Otra pista, por favor"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Qué viene después?"
+        },
+        {
+          "actor": "participant",
+          "text": "Hablemos de otra cosa"
+        },
+        {
+          "actor": "participant",
+          "text": "confirmo: salida"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ],
+      "study_mode": "doubt_resolution"
+    },
+    {
+      "case_id": "V-H11",
+      "partition": "holdout_cycle_4",
+      "domain": "programa",
+      "mode": "oral_defense",
+      "effective_profile": "guided_controlled",
+      "seed": 4011,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "La validación escribe datos en disco"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta actual"
+        },
+        {
+          "actor": "participant",
+          "text": "Necesito que me orientes"
+        },
+        {
+          "actor": "participant",
+          "text": "Dilo de otra manera"
+        },
+        {
+          "actor": "participant",
+          "text": "Otra pista, por favor"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Qué viene después?"
+        },
+        {
+          "actor": "participant",
+          "text": "Hablemos de otra cosa"
+        },
+        {
+          "actor": "participant",
+          "text": "confirmo: salida"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ],
+      "study_mode": "doubt_resolution"
+    },
+    {
+      "case_id": "V-H12",
+      "partition": "holdout_cycle_4",
+      "domain": "programa",
+      "mode": "oral_defense",
+      "effective_profile": "guided_controlled",
+      "seed": 4012,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "La entrada muestra todos los avisos"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta actual"
+        },
+        {
+          "actor": "participant",
+          "text": "Necesito que me orientes"
+        },
+        {
+          "actor": "participant",
+          "text": "Dilo de otra manera"
+        },
+        {
+          "actor": "participant",
+          "text": "Otra pista, por favor"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Qué viene después?"
+        },
+        {
+          "actor": "participant",
+          "text": "Hablemos de otra cosa"
+        },
+        {
+          "actor": "participant",
+          "text": "confirmo: salida"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite la pregunta"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ],
+      "study_mode": "doubt_resolution"
+    }
+  ]
+}

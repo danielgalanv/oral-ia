@@ -1,0 +1,293 @@
+{
+  "annotation": "AI-authored independent engineering scenarios, not human-reviewed; frozen before continuity implementation. Reserved not executed or tuned.",
+  "cases": [
+    {
+      "case_id": "development-agua-docx-self_study",
+      "partition": "development",
+      "stream": "agua-docx",
+      "mode": "self_study",
+      "topic": "evaporacion",
+      "academic_inputs": [
+        "Hola, ¿por qué una tela mojada pierde líquido?",
+        "Entonces, ¿evaporarse es desaparecer?",
+        "¿Qué hacen las moléculas para salir del líquido?",
+        "¿Y cómo pasa, en orden?",
+        "Sigo sin verlo. Explícamelo de otra manera."
+      ],
+      "opening": null,
+      "closure_request": "Termina sin conservar resumen ni transcripción.",
+      "closure_confirmation": "Lo confirmo.",
+      "source_request": "¿De dónde procede esa explicación?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "development-agua-docx-oral_defense",
+      "partition": "development",
+      "stream": "agua-docx",
+      "mode": "oral_defense",
+      "topic": "evaporacion",
+      "academic_inputs": [
+        "El agua desaparece cuando llega a cien grados.",
+        "Me rectifico: sale por la superficie sin necesitar hervir.",
+        "Necesito una pista para justificarlo."
+      ],
+      "opening": "Hola, quiero empezar la defensa.",
+      "closure_request": "Termina sin conservar resumen ni transcripción.",
+      "closure_confirmation": "Lo confirmo.",
+      "source_request": "¿De dónde procede esa pregunta?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "development-programa-docx-self_study",
+      "partition": "development",
+      "stream": "programa-docx",
+      "mode": "self_study",
+      "topic": "validacion",
+      "academic_inputs": [
+        "Buenas, ¿qué es validar exactamente?",
+        "¿Por qué no lo guardamos y luego vemos si está bien?",
+        "¿Y si escribo cero cero siete?",
+        "¿Qué ocurre si escribo mil?",
+        "¿Y ese último número cumple el rango?"
+      ],
+      "opening": null,
+      "closure_request": "Termina sin conservar resumen ni transcripción.",
+      "closure_confirmation": "Lo confirmo.",
+      "source_request": "¿De dónde procede esa explicación?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "development-programa-docx-oral_defense",
+      "partition": "development",
+      "stream": "programa-docx",
+      "mode": "oral_defense",
+      "topic": "validacion",
+      "academic_inputs": [
+        "Mil es válido porque solo tiene dígitos.",
+        "Rectifico: cumple formato, pero supera el rango permitido.",
+        "Necesito una pista para justificarlo."
+      ],
+      "opening": "Hola, quiero empezar la defensa.",
+      "closure_request": "Termina sin conservar resumen ni transcripción.",
+      "closure_confirmation": "Lo confirmo.",
+      "source_request": "¿De dónde procede esa pregunta?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "development-datos-pdf-self_study",
+      "partition": "development",
+      "stream": "datos-pdf",
+      "mode": "self_study",
+      "topic": "media",
+      "academic_inputs": [
+        "Hola, antes de calcular léeme los datos de la serie A.",
+        "¿Obtengo la media dividiendo treinta entre seis intentos?",
+        "¿Cuántas medidas válidas intervienen en el divisor?",
+        "¿Cómo se hace el cálculo paso a paso?",
+        "Para la mediana, ¿cómo empiezo?"
+      ],
+      "opening": null,
+      "closure_request": "Termina sin conservar resumen ni transcripción.",
+      "closure_confirmation": "Lo confirmo.",
+      "source_request": "¿De dónde procede esa explicación?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "development-datos-pdf-oral_defense",
+      "partition": "development",
+      "stream": "datos-pdf",
+      "mode": "oral_defense",
+      "topic": "media",
+      "academic_inputs": [
+        "Treinta entre seis intentos da una media de cinco.",
+        "Rectifico: solo tengo cinco duraciones; el intento sin medida no es cero.",
+        "Necesito una pista para justificarlo."
+      ],
+      "opening": "Hola, quiero empezar la defensa.",
+      "closure_request": "Termina sin conservar resumen ni transcripción.",
+      "closure_confirmation": "Lo confirmo.",
+      "source_request": "¿De dónde procede esa pregunta?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "reserved_first-agua-docx-self_study",
+      "partition": "reserved_first",
+      "stream": "agua-docx",
+      "mode": "self_study",
+      "topic": "evaporacion",
+      "academic_inputs": [
+        "Saludos. ¿Cómo sale el vapor de una tela sin que hierva?",
+        "¿Deja de existir esa agua al pasar al aire?",
+        "¿Por qué se escapan algunas moléculas de la superficie?",
+        "Cuéntame el proceso en una secuencia de pasos.",
+        "Necesito entenderlo desde otra perspectiva."
+      ],
+      "opening": null,
+      "closure_request": "Quiero finalizar sin guardar esta conversación.",
+      "closure_confirmation": "Confirmo terminar sin conservarlos.",
+      "source_request": "¿De dónde procede esa explicación?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "reserved_first-agua-docx-oral_defense",
+      "partition": "reserved_first",
+      "stream": "agua-docx",
+      "mode": "oral_defense",
+      "topic": "evaporacion",
+      "academic_inputs": [
+        "Pienso que evaporar descompone las moléculas de agua.",
+        "Quería decir que cambia el estado y sigue siendo agua.",
+        "Ayúdame a organizar mi argumento."
+      ],
+      "opening": "Saludos, comencemos con una pregunta de defensa.",
+      "closure_request": "Quiero finalizar sin guardar esta conversación.",
+      "closure_confirmation": "Confirmo terminar sin conservarlos.",
+      "source_request": "¿De dónde procede esa pregunta?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "reserved_first-programa-docx-self_study",
+      "partition": "reserved_first",
+      "stream": "programa-docx",
+      "mode": "self_study",
+      "topic": "validacion",
+      "academic_inputs": [
+        "Hola. ¿En qué consiste validar una cantidad?",
+        "¿Para qué comprobar el dato antes de almacenarlo?",
+        "Si introduzco 007, ¿qué sucede?",
+        "¿Aceptarías una entrada de 1000?",
+        "¿Qué regla se aplica a ese último valor?"
+      ],
+      "opening": null,
+      "closure_request": "Quiero finalizar sin guardar esta conversación.",
+      "closure_confirmation": "Confirmo terminar sin conservarlos.",
+      "source_request": "¿De dónde procede esa explicación?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "reserved_first-programa-docx-oral_defense",
+      "partition": "reserved_first",
+      "stream": "programa-docx",
+      "mode": "oral_defense",
+      "topic": "validacion",
+      "academic_inputs": [
+        "Guardar primero evita tener que validar la entrada.",
+        "Lo reformulo: primero debo comprobar formato y rango.",
+        "Ayúdame a organizar mi argumento."
+      ],
+      "opening": "Saludos, comencemos con una pregunta de defensa.",
+      "closure_request": "Quiero finalizar sin guardar esta conversación.",
+      "closure_confirmation": "Confirmo terminar sin conservarlos.",
+      "source_request": "¿De dónde procede esa pregunta?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "reserved_first-datos-pdf-self_study",
+      "partition": "reserved_first",
+      "stream": "datos-pdf",
+      "mode": "self_study",
+      "topic": "media",
+      "academic_inputs": [
+        "Buenas tardes, dime primero las duraciones observadas de la serie A.",
+        "¿Sería correcto repartir la suma de treinta entre las seis pruebas?",
+        "¿Qué ocurre con el intento sin una duración medida?",
+        "Descríbeme el procedimiento de la media en orden.",
+        "¿En qué consiste ordenar los datos para la mediana?"
+      ],
+      "opening": null,
+      "closure_request": "Quiero finalizar sin guardar esta conversación.",
+      "closure_confirmation": "Confirmo terminar sin conservarlos.",
+      "source_request": "¿De dónde procede esa explicación?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    },
+    {
+      "case_id": "reserved_first-datos-pdf-oral_defense",
+      "partition": "reserved_first",
+      "stream": "datos-pdf",
+      "mode": "oral_defense",
+      "topic": "media",
+      "academic_inputs": [
+        "Reparto entre todas las pruebas, aunque una esté sin medir.",
+        "Lo reformulo: distingo cinco valores medidos de seis intentos.",
+        "Ayúdame a organizar mi argumento."
+      ],
+      "opening": "Saludos, comencemos con una pregunta de defensa.",
+      "closure_request": "Quiero finalizar sin guardar esta conversación.",
+      "closure_confirmation": "Confirmo terminar sin conservarlos.",
+      "source_request": "¿De dónde procede esa pregunta?",
+      "rules": [
+        "Only respond to an actually emitted approved question; record divergence and stop rather than assume the proposed script",
+        "Each academic step must answer purpose or ask warranted clarification; never count HTTP200 as acceptance",
+        "No grading, student assertion never becomes source truth, protected outputs only approved question/hint",
+        "Three domains, current source witnesses, real pending operation and closure status",
+        "Retain predecessor rejection and preservation incident; no human/audio approval"
+      ]
+    }
+  ]
+}

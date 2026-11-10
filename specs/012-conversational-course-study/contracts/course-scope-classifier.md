@@ -1,0 +1,15 @@
+# Course scope classifier — lab v1
+
+`classify_scope` is an asynchronous, fallible local classifier independent of evidence sufficiency and answer verification. It uses the approved policy bound to the active SQL course/activity and revalidates before dispatch and after the model returns. It does not consume a retrieval score or classify course scope by the partial PDF inventory. It never publishes or changes participant state.
+
+Input: literal question (1–4000 characters), at most four explicitly shown turns with bounded input/displayed text, current binding, read-only SQL session and GenerationPort. Hidden candidates, clipping, missing activity, changed policy/source and retired activity fail closed. One call, 256 tokens, 30000 ms, no retry or model fallback. Cancellation propagates to the existing owned adapter.
+
+Output: `ScopeResult` with `ScopeAssessment`, exact request/outcome, policy hash and `publication_allowed=false`. Selection has five statuses, optional policy block IDs, standalone exclusion flag, optional literal spans and shown referent index. Unknown IDs, extra fields, malformed JSON and incomplete generation fail without a RAG question. No semantic confidence or source authorization follows from legal IDs.
+
+Mixed questions require two nonempty, disjoint, exact Unicode character ranges plus matching quotes. Only the included quote is returned as `rag_question`; the original mixed question, history and resolved query are not appended. A semantically wrong but syntactically valid split can still fail: the independent frozen oracle checks the permitted and excluded text separately. This module alone does not prove the model found the right split. An excluded part never becomes a historical source.
+
+`referent_turn` must point into supplied shown history. This checks existence, not semantic correctness. The classification receipt preserves the index, and the experimental oracle checks whether using that referent was appropriate. The current module is not automatically wired into `diagnostic_rag_turn`; no fixture result is silently replaced and no participant runtime is changed.
+
+Errors are observable laboratory failures and grant no exclusion notice or publication. The first trial stops on a false exclusion, mixed leakage, contract error or stale policy, preserving raw exchange and request even if parsing fails. Unexecuted cases remain separate from failed cases. A compute context belonging to another process postpones the trial; new foreign compute before a case stops further calls. Telemetry retains during-call concurrency evidence; affected latency is inconclusive.
+
+The v1 policy deliberately treats an unlisted domain such as photosynthesis as uncertain. This is conservative handling of missing authority, not evidence that the product can resolve all obviously unrelated questions. It neither expands the course nor requires a teacher to enumerate the universe of unrelated subjects. Product coverage at this boundary remains an explicit limitation.

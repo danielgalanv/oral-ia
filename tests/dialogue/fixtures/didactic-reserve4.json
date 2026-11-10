@@ -1,0 +1,67 @@
+{
+  "annotation": "New AI engineering combinations frozen before adding missing definition variant/fallback isolation; no human validation",
+  "cases": [
+    {
+      "case_id": "PL01",
+      "partition": "reserved_cycle_4",
+      "domain": "agua",
+      "steps": [
+        "Buenas noches",
+        "¿Cómo se evapora el agua líquida?",
+        "¿Qué significa evaporación?",
+        "Repítelo literalmente"
+      ],
+      "expected": [
+        "greeting",
+        "process",
+        "definition",
+        "repeat"
+      ]
+    },
+    {
+      "case_id": "PL02",
+      "partition": "reserved_cycle_4",
+      "domain": "agua",
+      "steps": [
+        "¿Cuál es la causa de la condensación?",
+        "No lo entiendo",
+        "¿Cómo se condensa el agua del aire?"
+      ],
+      "expected": [
+        "cause",
+        "cause_alternative",
+        "process"
+      ]
+    },
+    {
+      "case_id": "PL03",
+      "partition": "reserved_cycle_4",
+      "domain": "programa",
+      "steps": [
+        "¿Qué es la comprobación llamada validación?",
+        "Repite literalmente lo último",
+        "¿Por qué se valida un registro antes de guardarlo?"
+      ],
+      "expected": [
+        "definition",
+        "repeat",
+        "cause"
+      ]
+    },
+    {
+      "case_id": "PL04",
+      "partition": "reserved_cycle_4",
+      "domain": "programa",
+      "steps": [
+        "¿Es posible guardar registros sin validarlos?",
+        "¿Cómo se llama la comprobación previa al almacenamiento?",
+        "No expliques el proceso; solo dime qué es la validación"
+      ],
+      "expected": [
+        "possibility",
+        "definition",
+        "definition"
+      ]
+    }
+  ]
+}

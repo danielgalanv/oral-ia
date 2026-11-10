@@ -1,0 +1,399 @@
+{
+  "cases": [
+    {
+      "id": "DEV-SEQ-W",
+      "partition": "development",
+      "stream": "agua-docx",
+      "steps": [
+        {
+          "text": "Hola. ¿Puede evaporarse agua sin hervir?",
+          "topic": "evaporacion",
+          "suffix": "possibility"
+        },
+        {
+          "text": "¿Por qué sale del líquido?",
+          "topic": "evaporacion",
+          "suffix": "cause"
+        },
+        {
+          "text": "¿Se rompe en hidrógeno y oxígeno?",
+          "topic": "evaporacion",
+          "suffix": "molecular-fact"
+        },
+        {
+          "text": "Necesito que lo expliques de otra manera.",
+          "topic": "evaporacion"
+        },
+        {
+          "text": "¿Y cómo pasa, en orden?",
+          "topic": "evaporacion",
+          "suffix": "process"
+        },
+        {
+          "text": "¿Una tela siempre tarda lo mismo en secarse?",
+          "topic": "evaporacion",
+          "suffix": "conditions"
+        }
+      ],
+      "retained": false,
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Confirmo."
+    },
+    {
+      "id": "DEV-SEQ-P",
+      "partition": "development",
+      "stream": "programa-docx",
+      "steps": [
+        {
+          "text": "Buenas. Si puedo escribir una cantidad, el programa ya la acepta, ¿no?",
+          "topic": "validacion",
+          "suffix": "acceptance-boundary",
+          "contains": [
+            "Hola."
+          ]
+        },
+        {
+          "text": "¿Qué es validar exactamente?",
+          "topic": "validacion",
+          "suffix": "functional-definition"
+        },
+        {
+          "text": "¿Por qué no lo guardamos y luego vemos si está bien?",
+          "topic": "validacion",
+          "suffix": "causal-order"
+        },
+        {
+          "text": "He puesto cero cero siete. Eso está mal porque lleva ceros delante.",
+          "topic": "validacion",
+          "suffix": "example-1"
+        },
+        {
+          "text": "¿Y mil? También son dígitos.",
+          "topic": "validacion",
+          "suffix": "example-2"
+        },
+        {
+          "text": "Entonces tres coma cinco pasa, porque es más pequeño que mil.",
+          "topic": "validacion",
+          "suffix": "decimal-fact"
+        },
+        {
+          "text": "Me lío. Dime los pasos con ese último número.",
+          "topic": "validacion",
+          "suffix": "decimal-process"
+        },
+        {
+          "text": "Vale. Y si pongo siete, ya puedo decir «guardado».",
+          "topic": "validacion",
+          "suffix": "storage-boundary"
+        },
+        {
+          "text": "Entonces válido describe la entrada y guardado describe lo que ha ocurrido después.",
+          "topic": "validacion",
+          "suffix": "storage-failure"
+        },
+        {
+          "text": "Que se ha guardado. Le diría que ha fallado el guardado, aunque la cantidad sea válida.",
+          "topic": "validacion",
+          "suffix": "storage-report-process"
+        }
+      ],
+      "retained": false,
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Confirmo."
+    },
+    {
+      "id": "DEV-SEQ-D",
+      "partition": "development",
+      "stream": "datos-pdf",
+      "steps": [
+        {
+          "text": "Hola. No tengo la tabla delante. ¿Me puedes decir los números?",
+          "topic": "media",
+          "suffix": "definition"
+        },
+        {
+          "text": "Quiero la media. ¿Qué es?",
+          "topic": "media",
+          "suffix": "definition"
+        },
+        {
+          "text": "A mí me sale treinta entre seis, cinco.",
+          "topic": "media",
+          "suffix": "causal-count"
+        },
+        {
+          "text": "¿Por qué no ponemos cero en la que falta?",
+          "topic": "media",
+          "suffix": "missing-zero-cause"
+        },
+        {
+          "text": "Necesito otra explicación sobre ese dato que falta.",
+          "topic": "media",
+          "suffix": "missing-zero-alternative"
+        },
+        {
+          "text": "¿Cómo lo presento en orden?",
+          "topic": "media",
+          "suffix": "missing-zero-process"
+        },
+        {
+          "text": "¿Y la mediana también es seis?",
+          "topic": "mediana",
+          "suffix": "definition"
+        },
+        {
+          "text": "¿Por qué salen diferentes?",
+          "topic": "mediana",
+          "suffix": "comparison"
+        },
+        {
+          "text": "¿Y la otra?",
+          "topic": "mediana",
+          "notice": "clarify"
+        },
+        {
+          "text": "¿Cómo expongo la comparación de las series A y B, paso a paso?",
+          "topic": "interpretacion",
+          "suffix": "process"
+        }
+      ],
+      "retained": true,
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Confirmo."
+    },
+    {
+      "id": "DEV-SEQ-O-evaporacion",
+      "partition": "development",
+      "stream": "agua-docx",
+      "mode": "oral_defense",
+      "topic": "evaporacion",
+      "answers": [
+        "Solo veo que la tela pierde agua al secarse.",
+        "Estoy pensando en que sigue siendo la misma sustancia.",
+        "La tela queda menos húmeda sin llevarla a ebullición.",
+        "Relaciono la observación con el paso del líquido al aire."
+      ],
+      "steps": [],
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Confirmo.",
+      "retained": false
+    },
+    {
+      "id": "DEV-SEQ-O-validacion",
+      "partition": "development",
+      "stream": "programa-docx",
+      "mode": "oral_defense",
+      "topic": "validacion",
+      "answers": [
+        "La cantidad se guarda si todos los caracteres son números.",
+        "Me refiero a comprobar las reglas antes de guardar el registro.",
+        "Justifico la regla del caso antes de solicitar escritura.",
+        "Distingo comprobar los caracteres y comprobar el intervalo."
+      ],
+      "steps": [],
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Confirmo.",
+      "retained": false
+    },
+    {
+      "id": "DEV-SEQ-O-media",
+      "partition": "development",
+      "stream": "datos-pdf",
+      "mode": "oral_defense",
+      "topic": "media",
+      "answers": [
+        "Divido la suma entre todos los intentos realizados.",
+        "Cuento solo las duraciones que he podido medir.",
+        "El intento sin duración no es una medición de cero.",
+        "Conecto el número de observaciones válidas con el divisor."
+      ],
+      "steps": [],
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Confirmo.",
+      "retained": false
+    },
+    {
+      "id": "RES-SEQ-W",
+      "partition": "reserved",
+      "stream": "agua-docx",
+      "steps": [
+        {
+          "text": "Saludos. ¿Una tela húmeda puede secarse sin llevar agua a ebullición?",
+          "topic": "evaporacion",
+          "suffix": "possibility"
+        },
+        {
+          "text": "¿Qué causa que salga por la superficie?",
+          "topic": "evaporacion",
+          "suffix": "cause"
+        },
+        {
+          "text": "¿La molécula se descompone en hidrógeno y oxígeno?",
+          "topic": "evaporacion",
+          "suffix": "molecular-fact"
+        },
+        {
+          "text": "No termino de entenderlo; necesito otra perspectiva.",
+          "topic": "evaporacion"
+        },
+        {
+          "text": "¿Cómo ocurre ese proceso, paso a paso?",
+          "topic": "evaporacion",
+          "suffix": "process"
+        }
+      ],
+      "retained": false,
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Confirmo el cierre."
+    },
+    {
+      "id": "RES-SEQ-P",
+      "partition": "reserved",
+      "stream": "programa-docx",
+      "steps": [
+        {
+          "text": "Hola. ¿Teclear una cantidad garantiza que el programa la admita?",
+          "topic": "validacion",
+          "suffix": "acceptance-boundary"
+        },
+        {
+          "text": "¿Qué se entiende por validar?",
+          "topic": "validacion",
+          "suffix": "functional-definition"
+        },
+        {
+          "text": "La entrada 8,25 sería aceptable si es menor que mil.",
+          "topic": "validacion",
+          "suffix": "decimal-fact"
+        },
+        {
+          "text": "¿Qué pasos comprueban ese último valor?",
+          "topic": "validacion",
+          "suffix": "decimal-process"
+        },
+        {
+          "text": "Si la entrada es válida, ¿puedo anunciar que ya está guardado el registro?",
+          "topic": "validacion",
+          "suffix": "storage-boundary"
+        },
+        {
+          "text": "Distingo aceptar una cantidad de confirmar que se ha guardado en el fichero.",
+          "topic": "validacion",
+          "suffix": "storage-failure"
+        },
+        {
+          "text": "Si falla el archivo no puedo confirmar el guardado aunque acepte la cantidad.",
+          "topic": "validacion",
+          "suffix": "storage-report-process"
+        }
+      ],
+      "retained": false,
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Confirmo el cierre."
+    },
+    {
+      "id": "RES-SEQ-D",
+      "partition": "reserved",
+      "stream": "datos-pdf",
+      "steps": [
+        {
+          "text": "Buenas tardes, léeme los valores de la serie A.",
+          "topic": "media",
+          "suffix": "definition"
+        },
+        {
+          "text": "He repartido treinta entre seis intentos.",
+          "topic": "media",
+          "suffix": "causal-count"
+        },
+        {
+          "text": "Si falta esa duración, ¿por qué no reemplazarla por un cero?",
+          "topic": "media",
+          "suffix": "missing-zero-cause"
+        },
+        {
+          "text": "Sigo sin verlo; otra manera de explicar ese valor ausente.",
+          "topic": "media",
+          "suffix": "missing-zero-alternative"
+        },
+        {
+          "text": "¿Cómo se hace eso paso a paso?",
+          "topic": "media",
+          "suffix": "missing-zero-process"
+        },
+        {
+          "text": "¿La mediana de A da seis segundos?",
+          "topic": "mediana",
+          "suffix": "definition"
+        },
+        {
+          "text": "¿Por qué no coinciden esas medidas?",
+          "topic": "mediana",
+          "suffix": "comparison"
+        },
+        {
+          "text": "¿Cómo presento la comparación de las series A y B en orden?",
+          "topic": "interpretacion",
+          "suffix": "process"
+        }
+      ],
+      "retained": false,
+      "closure": "Sí. Termina sin conservar nada de la conversación.",
+      "confirmation": "Confirmo el cierre."
+    },
+    {
+      "id": "RES-SEQ-O-evaporacion",
+      "partition": "reserved",
+      "stream": "agua-docx",
+      "mode": "oral_defense",
+      "topic": "evaporacion",
+      "answers": [
+        "Solo veo que la tela pierde agua al secarse.",
+        "Estoy pensando en que sigue siendo la misma sustancia.",
+        "La tela queda menos húmeda sin llevarla a ebullición.",
+        "Relaciono la observación con el paso del líquido al aire."
+      ],
+      "steps": [],
+      "closure": "De acuerdo. Finaliza la sesión sin guardar esta conversación.",
+      "confirmation": "Confirmo.",
+      "retained": false
+    },
+    {
+      "id": "RES-SEQ-O-validacion",
+      "partition": "reserved",
+      "stream": "programa-docx",
+      "mode": "oral_defense",
+      "topic": "validacion",
+      "answers": [
+        "La cantidad se guarda si todos los caracteres son números.",
+        "Me refiero a comprobar las reglas antes de guardar el registro.",
+        "Justifico la regla del caso antes de solicitar escritura.",
+        "Distingo comprobar los caracteres y comprobar el intervalo."
+      ],
+      "steps": [],
+      "closure": "De acuerdo. Finaliza la sesión sin guardar esta conversación.",
+      "confirmation": "Confirmo.",
+      "retained": true
+    },
+    {
+      "id": "RES-SEQ-O-media",
+      "partition": "reserved",
+      "stream": "datos-pdf",
+      "mode": "oral_defense",
+      "topic": "media",
+      "answers": [
+        "Divido la suma entre todos los intentos realizados.",
+        "Cuento solo las duraciones que he podido medir.",
+        "El intento sin duración no es una medición de cero.",
+        "Conecto el número de observaciones válidas con el divisor."
+      ],
+      "steps": [],
+      "closure": "De acuerdo. Finaliza la sesión sin guardar esta conversación.",
+      "confirmation": "Confirmo.",
+      "retained": false
+    }
+  ],
+  "synthetic": true,
+  "human_review": "pending"
+}

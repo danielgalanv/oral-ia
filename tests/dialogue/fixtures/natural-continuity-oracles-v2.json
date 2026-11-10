@@ -1,0 +1,65 @@
+{
+  "study": {
+    "agua-docx": {
+      "reserved_second": [
+        [
+          "definition"
+        ],
+        [
+          "alternative"
+        ],
+        [
+          "cause"
+        ],
+        [
+          "process"
+        ],
+        [
+          "alternative",
+          "process-support"
+        ]
+      ]
+    },
+    "programa-docx": {
+      "reserved_second": [
+        [
+          "definition"
+        ],
+        [
+          "causal-order"
+        ],
+        [
+          "example-1"
+        ],
+        [
+          "example-2",
+          "possibility"
+        ],
+        [
+          "possibility"
+        ]
+      ]
+    },
+    "datos-pdf": {
+      "reserved_second": [
+        [
+          "definition"
+        ],
+        [
+          "causal-count"
+        ],
+        [
+          "count-fact",
+          "ausentes-definition"
+        ],
+        [
+          "process"
+        ],
+        [
+          "mediana-definition",
+          "mediana-process"
+        ]
+      ]
+    }
+  }
+}

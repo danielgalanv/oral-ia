@@ -1,0 +1,3 @@
+# Datos y ciclo de vida
+
+Reusar Course, MaterialDocument/Fragment, ActivityConfiguration/Governance, SelfStudyActivityConfig, Session/CognitiveState/Turn, GeneratedProposal, VerificationResult y preferencias/recibos de eliminación. No migración prevista. El perfil de preparación conserva un manifest local sin secretos: hashes originales/derivados, páginas origen→extracto, actividad/version/perfil. Originales solo lectura; extractos derivados con autoría mecánica identificada, sin contenido añadido. SQLite/índice/materiales/configuración en raíz propia marcada. Secreto/cookies solo memoria. Preparación idempotente comprueba versión/hash antes de reusar. Sesión: active→cierre autorizado, nunca éxito simulado tras closed_error_safe; cancelación solo sesión propia.

@@ -1,0 +1,12 @@
+{
+  "created_at_utc": "2026-10-19T15:10:27.462768+00:00",
+  "sha256": {
+    "inputs.json": "9aaf2210771c3f7bffe898c0e680eb25d8298880dd53e9562f96276e6a548712"
+  },
+  "review": "New synthetic classification inputs, engineering annotation by AI implementer, not independent human review. Frozen before first run; preserve all failures.",
+  "fresh_inputs": 48,
+  "critical_inputs": 36,
+  "fresh_dialogues": 0,
+  "dialogue_basis": "12 W first-reserve dialogues from cycle5 passed and were not used for the two classifier fixes; prove unchanged interpreter behavior over those texts and re-execute public conversations. Do not label them new cycle6 dialogues.",
+  "prior_input_passes_reused": false
+}

@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-19T10:01:24.132512+00:00",
+  "sha256": {
+    "dialogues.json": "aad900d41170125d0a26804aa31a05a24863613ac8011d762be2f05e12cb28d1",
+    "inputs.json": "89a62e7487d824fda31dd96db79eddabdddfae8c28f3aa0319efd36296f820f3"
+  },
+  "source_before_development": {
+    "src/oralia/domain/dialogue/interpretation.py": "ce372801cd6774ac1e22bfa57fb171263a413510b30f7aadffd80088223ef98b",
+    "src/oralia/domain/dialogue/policy.py": "928877bb088b3c33819602d8c92be0f907a5e2017649beea36401d516e116f1c",
+    "src/oralia/domain/agents/coherence_verifier_agent.py": "d4c538d57b001ebdef6d19faf58b7e8362aafbcfdf1ff4500e5f8db552e17bd6"
+  },
+  "reason": "First reserved cycle failed (11/12 dialogue, 37/48 acts). Those originals/results stay immutable and become regression evidence.",
+  "fresh_cases": {
+    "dialogues": 12,
+    "independent_inputs": 48,
+    "critical_inputs": 36
+  },
+  "prior_passes_reused": false,
+  "review": "Manual synthetic engineering annotation before further grammar/focus/default-objective changes. Same implementer; no independent human or educational utility validation claimed.",
+  "execution": "not executed; do not tune on this cycle; preserve first results, including failures"
+}

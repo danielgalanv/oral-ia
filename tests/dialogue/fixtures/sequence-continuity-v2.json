@@ -1,0 +1,191 @@
+{
+  "cases": [
+    {
+      "id": "H2-W",
+      "partition": "reserved",
+      "stream": "agua-docx",
+      "steps": [
+        {
+          "text": "Hola. ¿Puede evaporarse el agua sin alcanzar la ebullición?",
+          "topic": "evaporacion",
+          "suffix": "possibility"
+        },
+        {
+          "text": "¿A qué se debe que salga por la superficie?",
+          "topic": "evaporacion",
+          "suffix": "cause"
+        },
+        {
+          "text": "¿Es una descomposición en oxígeno e hidrógeno?",
+          "topic": "evaporacion",
+          "suffix": "molecular-fact"
+        },
+        {
+          "text": "Necesito otra forma de entender ese cambio.",
+          "topic": "evaporacion"
+        },
+        {
+          "text": "¿Cómo se desarrolla eso paso a paso?",
+          "topic": "evaporacion",
+          "suffix": "process"
+        }
+      ],
+      "closure": "Quiero finalizar la sesión sin conservar resumen ni transcripción.",
+      "confirmation": "Confirmo.",
+      "retained": false
+    },
+    {
+      "id": "H2-P",
+      "partition": "reserved",
+      "stream": "programa-docx",
+      "steps": [
+        {
+          "text": "Saludos. ¿Ingresar una cantidad implica que se acepta?",
+          "topic": "validacion",
+          "suffix": "acceptance-boundary"
+        },
+        {
+          "text": "¿En qué consiste validar esa entrada?",
+          "topic": "validacion",
+          "suffix": "functional-definition"
+        },
+        {
+          "text": "¿Para qué revisar la cantidad antes de pedir guardarla?",
+          "topic": "validacion",
+          "suffix": "causal-order"
+        },
+        {
+          "text": "La cantidad 4,75 sería admisible al ser menor que mil.",
+          "topic": "validacion",
+          "suffix": "decimal-fact"
+        },
+        {
+          "text": "Describe el procedimiento para ese valor.",
+          "topic": "validacion",
+          "suffix": "decimal-process"
+        },
+        {
+          "text": "Si pasa las comprobaciones, ¿puedo confirmar el guardado?",
+          "topic": "validacion",
+          "suffix": "storage-boundary"
+        },
+        {
+          "text": "Diferencio el dato aceptable de la confirmación de escritura.",
+          "topic": "validacion",
+          "suffix": "storage-failure"
+        },
+        {
+          "text": "Si falla la escritura, informaría del fallo aunque el dato fuera válido.",
+          "topic": "validacion",
+          "suffix": "storage-report-process"
+        }
+      ],
+      "closure": "Quiero finalizar la sesión sin conservar resumen ni transcripción.",
+      "confirmation": "Confirmo.",
+      "retained": false
+    },
+    {
+      "id": "H2-D",
+      "partition": "reserved",
+      "stream": "datos-pdf",
+      "steps": [
+        {
+          "text": "Buenas, primero dime los valores de la serie A.",
+          "topic": "media",
+          "suffix": "definition"
+        },
+        {
+          "text": "¿Qué significa la media de esas duraciones?",
+          "topic": "media",
+          "suffix": "definition"
+        },
+        {
+          "text": "Yo había dividido treinta entre seis intentos.",
+          "topic": "media",
+          "suffix": "causal-count"
+        },
+        {
+          "text": "¿Por qué no sustituir por cero el dato desconocido?",
+          "topic": "media",
+          "suffix": "missing-zero-cause"
+        },
+        {
+          "text": "No lo comprendo. Explícalo de otra forma.",
+          "topic": "media",
+          "suffix": "missing-zero-alternative"
+        },
+        {
+          "text": "¿Cómo expongo ese procedimiento por pasos?",
+          "topic": "media",
+          "suffix": "missing-zero-process"
+        },
+        {
+          "text": "¿La mediana de A vale seis?",
+          "topic": "mediana",
+          "suffix": "definition"
+        },
+        {
+          "text": "¿Por qué difieren esos dos resúmenes?",
+          "topic": "mediana",
+          "suffix": "comparison"
+        }
+      ],
+      "closure": "Quiero finalizar la sesión sin conservar resumen ni transcripción.",
+      "confirmation": "Confirmo el cierre.",
+      "retained": true
+    },
+    {
+      "id": "H2-O-evaporacion",
+      "partition": "reserved",
+      "stream": "agua-docx",
+      "mode": "oral_defense",
+      "topic": "evaporacion",
+      "answers": [
+        "Solo observo que la prenda pierde agua al secarse.",
+        "Pienso en un cambio físico y no en otra sustancia.",
+        "Observo menos líquido sin haberlo calentado hasta hervir.",
+        "Relaciono mi explicación con la superficie que se seca."
+      ],
+      "steps": [],
+      "closure": "Quiero finalizar la sesión sin conservar resumen ni transcripción.",
+      "confirmation": "Confirmo.",
+      "retained": false
+    },
+    {
+      "id": "H2-O-validacion",
+      "partition": "reserved",
+      "stream": "programa-docx",
+      "mode": "oral_defense",
+      "topic": "validacion",
+      "answers": [
+        "El texto numérico ya permite afirmar que se guardó.",
+        "Separaría las comprobaciones antes de intentar escribir.",
+        "La cantidad debe cumplir las reglas antes de pedir escritura.",
+        "Distingo lo que recibo y el resultado que todavía debo comprobar."
+      ],
+      "steps": [],
+      "closure": "Quiero finalizar la sesión sin conservar resumen ni transcripción.",
+      "confirmation": "Confirmo.",
+      "retained": false
+    },
+    {
+      "id": "H2-O-media",
+      "partition": "reserved",
+      "stream": "datos-pdf",
+      "mode": "oral_defense",
+      "topic": "media",
+      "answers": [
+        "Usaría el total de intentos para repartir la suma.",
+        "Tengo que contar las duraciones que sí se registraron.",
+        "Una duración desconocida no demuestra que durase cero.",
+        "Relaciono los valores conocidos con la pregunta del divisor."
+      ],
+      "steps": [],
+      "closure": "Quiero finalizar la sesión sin conservar resumen ni transcripción.",
+      "confirmation": "Confirmo.",
+      "retained": false
+    }
+  ],
+  "synthetic": true,
+  "human_review": "pending"
+}

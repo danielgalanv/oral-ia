@@ -1,0 +1,10 @@
+{
+  "created_at_utc": "2026-10-19T14:55:16.778016+00:00",
+  "sha256": {
+    "inputs.json": "dadc31b89e69f55e3111698f30cd14e62724ad0a3ba5da525057fed7a2339b18",
+    "dialogues.json": "f101d781b60633bb7635082484e6e93d109922648a22dd7303553599a0728d2d"
+  },
+  "review": "Synthetic engineering annotation by implementer; not independent human review. New combinations, including governed repeat targets and diverse protected control orders. Frozen before first execution; retain all failures. No result is presupposed.",
+  "prior_passes_reused": false,
+  "expected_repeat_target_cases": 6
+}

@@ -1,0 +1,197 @@
+{
+  "cases": [
+    {
+      "id": "H6-W",
+      "partition": "reserved",
+      "stream": "agua-docx",
+      "steps": [
+        {
+          "text": "Buenas tardes. ¿Se seca una tela sin hervir el agua?",
+          "topic": "evaporacion",
+          "suffix": "possibility"
+        },
+        {
+          "text": "¿Cuál es la causa de que salga por la superficie?",
+          "topic": "evaporacion",
+          "suffix": "cause"
+        },
+        {
+          "text": "¿El cambio de estado rompe el agua en hidrógeno y oxígeno?",
+          "topic": "evaporacion",
+          "suffix": "molecular-fact"
+        },
+        {
+          "text": "Me cuesta entender ese cambio. Quiero otra explicación.",
+          "topic": "evaporacion"
+        },
+        {
+          "text": "¿Cómo se desarrolla ese proceso?",
+          "topic": "evaporacion",
+          "suffix": "process"
+        }
+      ],
+      "retained": false,
+      "closure": "Quiero cerrar la sesión sin conservar nada.",
+      "confirmation": "Confirmo."
+    },
+    {
+      "id": "H6-P",
+      "partition": "reserved",
+      "stream": "programa-docx",
+      "steps": [
+        {
+          "text": "Hola. ¿Introducir un registro significa que se acepta?",
+          "topic": "validacion",
+          "suffix": "acceptance-boundary"
+        },
+        {
+          "text": "¿Qué es validar el texto recibido?",
+          "topic": "validacion",
+          "suffix": "functional-definition"
+        },
+        {
+          "text": "¿Por qué validar primero y almacenar después?",
+          "topic": "validacion",
+          "suffix": "causal-order"
+        },
+        {
+          "text": "El valor 2,25 me parece aceptable por ser menor que mil.",
+          "topic": "validacion",
+          "suffix": "decimal-fact"
+        },
+        {
+          "text": "¿Cómo reviso ese valor en orden?",
+          "topic": "validacion",
+          "suffix": "decimal-process"
+        },
+        {
+          "text": "Tras validar el dato, ¿puedo informar que quedó guardado?",
+          "topic": "validacion",
+          "suffix": "storage-boundary"
+        },
+        {
+          "text": "Separo la validación del texto del resultado de escritura.",
+          "topic": "validacion",
+          "suffix": "storage-failure"
+        },
+        {
+          "text": "Si el fichero falla, no puedo anunciar guardado.",
+          "topic": "validacion",
+          "suffix": "storage-report-process"
+        }
+      ],
+      "retained": true,
+      "closure": "Quiero cerrar la sesión sin conservar nada.",
+      "confirmation": "Confirmo."
+    },
+    {
+      "id": "H6-D",
+      "partition": "reserved",
+      "stream": "datos-pdf",
+      "steps": [
+        {
+          "text": "Saludos. Dime primero los datos de la serie A.",
+          "topic": "media",
+          "suffix": "definition"
+        },
+        {
+          "text": "¿En qué consiste la media?",
+          "topic": "media",
+          "suffix": "definition"
+        },
+        {
+          "text": "Dividí treinta entre seis pruebas.",
+          "topic": "media",
+          "suffix": "causal-count"
+        },
+        {
+          "text": "¿A qué se debe que no ponemos cero en la duración que falta?",
+          "topic": "media",
+          "suffix": "missing-zero-cause"
+        },
+        {
+          "text": "Me cuesta verlo. Necesito otra explicación.",
+          "topic": "media",
+          "suffix": "missing-zero-alternative"
+        },
+        {
+          "text": "¿Cómo lo presento en orden?",
+          "topic": "media",
+          "suffix": "missing-zero-process"
+        },
+        {
+          "text": "¿La mediana es seis?",
+          "topic": "mediana",
+          "suffix": "definition"
+        },
+        {
+          "text": "¿Por qué son distintos esos dos resúmenes?",
+          "topic": "mediana",
+          "suffix": "comparison"
+        },
+        {
+          "text": "¿Cómo presento la comparación de las series A y B paso a paso?",
+          "topic": "interpretacion",
+          "suffix": "process"
+        }
+      ],
+      "retained": false,
+      "closure": "Quiero cerrar la sesión sin conservar nada.",
+      "confirmation": "Confirmo."
+    },
+    {
+      "id": "H6-O-evaporacion",
+      "partition": "reserved",
+      "stream": "agua-docx",
+      "mode": "oral_defense",
+      "topic": "evaporacion",
+      "answers": [
+        "Vi que la prenda había perdido humedad.",
+        "Sigue siendo agua después del cambio de estado.",
+        "Secarse no basta para afirmar que el agua hirvió.",
+        "Explicaría la salida de agua por su superficie."
+      ],
+      "steps": [],
+      "retained": false,
+      "closure": "Quiero cerrar la sesión sin conservar nada.",
+      "confirmation": "Confirmo."
+    },
+    {
+      "id": "H6-O-validacion",
+      "partition": "reserved",
+      "stream": "programa-docx",
+      "mode": "oral_defense",
+      "topic": "validacion",
+      "answers": [
+        "He leído el texto y por eso diría que ya se guardó.",
+        "Antes de guardar revisaría las condiciones del dato.",
+        "El formato y el rango requieren comprobaciones previas.",
+        "Separaría la validez del contenido del resultado de escribirlo."
+      ],
+      "steps": [],
+      "retained": false,
+      "closure": "Quiero cerrar la sesión sin conservar nada.",
+      "confirmation": "Confirmo."
+    },
+    {
+      "id": "H6-O-media",
+      "partition": "reserved",
+      "stream": "datos-pdf",
+      "mode": "oral_defense",
+      "topic": "media",
+      "answers": [
+        "Al dividir había contado también el intento sin duración.",
+        "Contaría únicamente las duraciones medidas.",
+        "El tiempo no conocido no equivale a cero segundos.",
+        "El número de medidas conocidas determina el divisor."
+      ],
+      "steps": [],
+      "retained": false,
+      "closure": "Quiero cerrar la sesión sin conservar nada.",
+      "confirmation": "Confirmo."
+    }
+  ],
+  "synthetic": true,
+  "human_review": "pending",
+  "scope": "Six new complete synthetic formulations frozen before final result-of-writing repair; author is implementing agent, no human independence or general acceptance claim."
+}

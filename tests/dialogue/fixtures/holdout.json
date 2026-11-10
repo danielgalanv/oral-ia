@@ -1,0 +1,590 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "case_id": "H01",
+      "partition": "holdout",
+      "domain": "agua",
+      "mode": "self_study",
+      "study_mode": "concept_review",
+      "effective_profile": "guided_controlled",
+      "seed": 1001,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "Buenas tardes"
+        },
+        {
+          "actor": "participant",
+          "text": "Quisiera revisar los cambios de estado"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Por qué aparecen gotas en un vaso frío?"
+        },
+        {
+          "actor": "participant",
+          "text": "Descríbelo de otra manera"
+        },
+        {
+          "actor": "participant",
+          "text": "Ilústralo con una situación"
+        },
+        {
+          "actor": "participant",
+          "text": "Relaciona los dos procesos"
+        },
+        {
+          "actor": "participant",
+          "text": "Vuelve a la cuestión de las gotas"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "H02",
+      "partition": "holdout",
+      "domain": "agua",
+      "mode": "self_study",
+      "study_mode": "presentation_preparation",
+      "effective_profile": "guided_controlled",
+      "seed": 1002,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "Voy a ensayar una exposición sobre el agua"
+        },
+        {
+          "actor": "participant",
+          "text": "Ayúdame a ordenar lo que diré"
+        },
+        {
+          "actor": "participant",
+          "text": "Necesito una comparación"
+        },
+        {
+          "actor": "participant",
+          "text": "No la copies: pon una situación diferente"
+        },
+        {
+          "actor": "participant",
+          "text": "Me he perdido"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Qué paso sigue?"
+        },
+        {
+          "actor": "participant",
+          "text": "Quiero concluir"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "H03",
+      "partition": "holdout",
+      "domain": "agua",
+      "mode": "self_study",
+      "study_mode": "practice_questions",
+      "effective_profile": "guided_controlled",
+      "seed": 1003,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "Quiero practicar congelación"
+        },
+        {
+          "actor": "participant",
+          "text": "Creo que la temperatura desciende"
+        },
+        {
+          "actor": "participant",
+          "text": "No consigo argumentarlo"
+        },
+        {
+          "actor": "participant",
+          "text": "Una ayuda pequeña"
+        },
+        {
+          "actor": "participant",
+          "text": "Muéstrame la respuesta completa"
+        },
+        {
+          "actor": "participant",
+          "text": "Prefiero otra pregunta"
+        },
+        {
+          "actor": "participant",
+          "text": "Léela de nuevo"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "H04",
+      "partition": "holdout",
+      "domain": "programa",
+      "mode": "self_study",
+      "study_mode": "guided_explanation",
+      "effective_profile": "guided_controlled",
+      "seed": 1004,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "Guíame con la separación de funciones"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Qué ocurre al recibir un registro?"
+        },
+        {
+          "actor": "participant",
+          "text": "Dilo con otras palabras"
+        },
+        {
+          "actor": "participant",
+          "text": "Pon un caso concreto"
+        },
+        {
+          "actor": "participant",
+          "text": "No repitas; necesito un contraste"
+        },
+        {
+          "actor": "participant",
+          "text": "Eso no está claro"
+        },
+        {
+          "actor": "participant",
+          "text": "Me refiero al contraste"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Qué viene después?"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "H05",
+      "partition": "holdout",
+      "domain": "programa",
+      "mode": "self_study",
+      "study_mode": "doubt_resolution",
+      "effective_profile": "guided_controlled",
+      "seed": 1005,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "¿Dónde se comprueba un dato?"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Y dónde se conserva?"
+        },
+        {
+          "actor": "participant",
+          "text": "Aclara eso"
+        },
+        {
+          "actor": "participant",
+          "text": "Elijo conservación"
+        },
+        {
+          "actor": "participant",
+          "text": "Una comparación"
+        },
+        {
+          "actor": "participant",
+          "text": "Reitera lo último"
+        },
+        {
+          "actor": "participant",
+          "text": "Quiero otro tema"
+        },
+        {
+          "actor": "participant",
+          "text": "Confirmo salida"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "H06",
+      "partition": "holdout",
+      "domain": "programa",
+      "mode": "self_study",
+      "study_mode": "concept_review",
+      "effective_profile": "guided_controlled",
+      "seed": 1006,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "Repasemos la salida"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Puede validar por su cuenta?"
+        },
+        {
+          "actor": "participant",
+          "text": "Me falta contexto"
+        },
+        {
+          "actor": "participant",
+          "text": "Haz una pregunta"
+        },
+        {
+          "actor": "participant",
+          "text": "No conozco la respuesta"
+        },
+        {
+          "actor": "participant",
+          "text": "Una pista sin resolver"
+        },
+        {
+          "actor": "participant",
+          "text": "Otra manera de plantearla"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "H07",
+      "partition": "holdout",
+      "domain": "agua",
+      "mode": "oral_defense",
+      "study_mode": null,
+      "effective_profile": "guided_controlled",
+      "seed": 1007,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "Supongo que unos cien Celsius"
+        },
+        {
+          "actor": "participant",
+          "text": "No he especificado la presión"
+        },
+        {
+          "actor": "participant",
+          "text": "Necesito orientación"
+        },
+        {
+          "actor": "participant",
+          "text": "Relee lo que me preguntabas"
+        },
+        {
+          "actor": "participant",
+          "text": "Exprésalo de modo distinto"
+        },
+        {
+          "actor": "participant",
+          "text": "Dame un indicio adicional"
+        },
+        {
+          "actor": "participant",
+          "text": "Pasemos a otro objetivo"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "H08",
+      "partition": "holdout",
+      "domain": "agua",
+      "mode": "oral_defense",
+      "study_mode": null,
+      "effective_profile": "guided_controlled",
+      "seed": 1008,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "A noventa y nueve grados"
+        },
+        {
+          "actor": "participant",
+          "text": "Tal vez depende del entorno"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Qué debo justificar primero?"
+        },
+        {
+          "actor": "participant",
+          "text": "No me des la solución"
+        },
+        {
+          "actor": "participant",
+          "text": "Acércame con una pista"
+        },
+        {
+          "actor": "participant",
+          "text": "Repite esa cuestión"
+        },
+        {
+          "actor": "participant",
+          "text": "Finalicemos"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "H09",
+      "partition": "holdout",
+      "domain": "agua",
+      "mode": "oral_defense",
+      "study_mode": null,
+      "effective_profile": "guided_controlled",
+      "seed": 1009,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "El vapor se enfría"
+        },
+        {
+          "actor": "participant",
+          "text": "No distingo las condiciones"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Un caso comparable?"
+        },
+        {
+          "actor": "participant",
+          "text": "Aclara a qué te refieres"
+        },
+        {
+          "actor": "participant",
+          "text": "La pregunta actual"
+        },
+        {
+          "actor": "participant",
+          "text": "Formula esa pregunta de nuevo"
+        },
+        {
+          "actor": "participant",
+          "text": "Sigamos"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "H10",
+      "partition": "holdout",
+      "domain": "programa",
+      "mode": "oral_defense",
+      "study_mode": null,
+      "effective_profile": "guided_controlled",
+      "seed": 1010,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "Se comprueba el dato antes de guardarlo"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Quieres una razón?"
+        },
+        {
+          "actor": "participant",
+          "text": "No sabría explicarla"
+        },
+        {
+          "actor": "participant",
+          "text": "Una indicación"
+        },
+        {
+          "actor": "participant",
+          "text": "Sin repetir: otro planteamiento"
+        },
+        {
+          "actor": "participant",
+          "text": "Lee la pregunta vigente"
+        },
+        {
+          "actor": "participant",
+          "text": "Avancemos"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "H11",
+      "partition": "holdout",
+      "domain": "programa",
+      "mode": "oral_defense",
+      "study_mode": null,
+      "effective_profile": "guided_controlled",
+      "seed": 1011,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "Cada parte tiene una responsabilidad"
+        },
+        {
+          "actor": "participant",
+          "text": "No tengo un ejemplo"
+        },
+        {
+          "actor": "participant",
+          "text": "Ayúdame a empezarlo"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Qué parte sigue?"
+        },
+        {
+          "actor": "participant",
+          "text": "Eso"
+        },
+        {
+          "actor": "participant",
+          "text": "Elijo el objetivo actual"
+        },
+        {
+          "actor": "participant",
+          "text": "Deseo acabar"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    },
+    {
+      "case_id": "H12",
+      "partition": "holdout",
+      "domain": "programa",
+      "mode": "oral_defense",
+      "study_mode": null,
+      "effective_profile": "guided_controlled",
+      "seed": 1012,
+      "steps": [
+        {
+          "actor": "participant",
+          "text": "La salida presenta el resultado"
+        },
+        {
+          "actor": "participant",
+          "text": "¿Y si un dato es inválido?"
+        },
+        {
+          "actor": "participant",
+          "text": "Estoy atascado"
+        },
+        {
+          "actor": "participant",
+          "text": "Plantea la cuestión con otras palabras"
+        },
+        {
+          "actor": "participant",
+          "text": "Dame otra pista"
+        },
+        {
+          "actor": "participant",
+          "text": "Solicito el resultado resuelto"
+        },
+        {
+          "actor": "participant",
+          "text": "Otra pregunta"
+        }
+      ],
+      "expected_properties": [
+        "authorized_current_evidence",
+        "stable_pending_objective",
+        "no_solution_disclosure",
+        "no_consecutive_identical_generic_alerts",
+        "executable_recovery_within_two_turns",
+        "finite_budget",
+        "no_grades_or_participant_profile"
+      ]
+    }
+  ],
+  "protocol": "First run must be reported including failures. Exposed failing cases become regression; no tuning against this acceptance set."
+}

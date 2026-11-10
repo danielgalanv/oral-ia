@@ -1,0 +1,13 @@
+{
+  "purpose": "Reference environment observed locally on 2026-11-05; not a complete lock or a portability guarantee",
+  "python": "Separate CUDA worker; configure ORALIA_CUDA_PYTHON",
+  "packages": {
+    "torch": "2.13.0+cu130",
+    "transformers": "5.5.3",
+    "accelerate": "1.15.0",
+    "bitsandbytes": "0.50.2",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.9.0rc1"
+  },
+  "install_models_automatically": false
+}
